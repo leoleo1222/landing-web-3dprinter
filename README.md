@@ -1,32 +1,30 @@
 # 3D-Printer
 
-## How to use virtaul evnironment in python
+## How to use download OctoPrint
 
-### Create a virtual environment
+At first we need to clone the OctoPrint https://github.com/OctoPrint/OctoPrint
+
+We need to run the setup.py from the cloned repo.
 
 ```bash
-python3 -m venv env
+python setup.py bdist_wheel
 ```
 
+After that we need to pip install from the OctoPrint-1.8.6-py2.py3-none-any.whl
+
 ```bash
-py -m venv env
+pip install --user dist\OctoPrint-1.8.6-py2.py3-none-any.whl
 ```
 
-### Activate the virtual environment
+## How to start the OctoPrint server
 
+Start the server
 ```bash
-.\env\Scripts\activate
+python -m octoprint serve
 ```
 
-### Install dependencies
-
+Go to the URL in brower
 ```bash
-pip install -r requirements.txt
-```
-
-### Deactivate the virtual environment
-
-```bash
-deactivate
+http://localhost:5000/
 ```
 
