@@ -1,5 +1,10 @@
 # 3D-Printer
 
+
+## Intall Octoprint
+```bash
+pip install --user OctoPrint==1.7.0
+```
 ## How to use download OctoPrint
 
 At first we need to clone the OctoPrint https://github.com/OctoPrint/OctoPrint
