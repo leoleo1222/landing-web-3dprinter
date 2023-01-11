@@ -1,6 +1,6 @@
 <template>
   <!-- boostrap navbar-->
-  <nav class="navbar navbar-expand-lg bg-light" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
     <div class="container-fluid">
       <router-link class="navbar-brand" aria-current="page" to="/">HKBU</router-link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
