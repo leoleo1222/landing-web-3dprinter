@@ -2,29 +2,22 @@
   <!-- boostrap navbar-->
   <nav class="navbar navbar-expand-lg bg-light" >
     <div class="container-fluid">
-      <router-link class="nav-link active" aria-current="page" :to="'/'">
-        <a class="navbar-brand" href="#">HKBU</a>
-      </router-link>
+      <router-link class="navbar-brand" aria-current="page" to="/">HKBU</router-link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/solution">
-              Solution
+            <router-link class="nav-link active" aria-current="page" to="/louis">
+              Louis
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/about">
-              About Us
+            <router-link class="nav-link active" aria-current="page" to="/leo">
+              Leo
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/product">
-              Product
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/contact">
-              Contact Us
+            <router-link class="nav-link active" aria-current="page" to="/raymond">
+              Raymond
             </router-link>
           </li>
         </ul>
