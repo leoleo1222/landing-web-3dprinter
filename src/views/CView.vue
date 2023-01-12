@@ -15,18 +15,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.container{
-  min-height: 100vh;
-  justify-content: flex;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: #1c5f83;      
-}
-</style>

@@ -2,23 +2,28 @@
   <div class="container pt-4">
     <div class="textbox">
       <h2 data-text="3D PRINTING">3D PRINTING</h2>
-    </div>  
-
-    <h3>
-      Barriers when facing 3D printing: 
-    </h3>
-
-    <div class="row">
-      <div class="col md-4"></div>
-      <div class="col md-4"></div>
-      <div class="col md-4"></div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid bg-info text-white text-center " >Trend of 3D Printing </div>
-    
-    <div class="slideInRight">Easy to use!</div>
-    <div class="slideInRight">Affordable</div>
-    <div class="slideInRight">Expendable</div>
+    <h3 class="pt-2 text-white">Barriers when facing 3D printing:</h3>
+
+    <div class="row pt-2">
+      <div class="col-sm-4">
+        <div class="mt-4 p-5 bg-secondary text-white rounded" data-aos="flip-left">
+          <h1>Easy to use</h1>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="mt-4 p-5 bg-secondary text-white rounded" data-aos="flip-left">
+          <h1>Affordable</h1>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="mt-4 p-5 bg-secondary text-white rounded" data-aos="flip-left">
+          <h1>Expendable</h1>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -39,6 +44,19 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+.container {
+  min-height: 100vh;
+  justify-content: flex;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1c5f83;
+}
 
 .textbox {
   display: flex;
