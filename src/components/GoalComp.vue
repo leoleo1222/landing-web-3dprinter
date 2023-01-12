@@ -1,18 +1,18 @@
 <template>
     <div>
         <div class="card text-center border-0 gap">
-            <div class="card-header goal">
-                <h1>Goal</h1>
+            <div class="card-header gap">
+                <h3>Goal</h3>
             </div>
             <div class="row">
                 <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal" style="width: 12rem;">
 
-                    <h5 class="card-title">School</h5>
+                    <h4 class="card-title">School</h4>
                     <p class="card-text">get access to 3D printing technology in a human-friendly way</p>
                 </div>
 
                 <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal" style="width: 12rem;">
-                    <h5 class="card-title">Students</h5>
+                    <h4 class="card-title">Students</h4>
                     <p class="card-text">design and print their own 3D models</p>
                     <p class="card-text">discover the world of 3D printing</p>
                     <p class="card-text">explore creativity, imagination and unlock their potential with 3D printing
@@ -21,13 +21,13 @@
 
                 <div data-aos="flip-left" class="card col-md-4 col-lg-4 card-body mx-3 my-3 goal"
                     style="width: 12rem;">
-                    <h5 class="card-title">Society</h5>
+                    <h4 class="card-title">Society</h4>
                     <p class="card-text ">provide an additional way to strengthen the basics of 3D-printing learners
                     </p>
                 </div>
 
-                <div class="card-footer text-muted">
-                    slogan like "Child can gains high" lol?
+                <div class="card-footer text-muted gap">
+                    slogan like "Child can gain high"?
                 </div>
             </div>
         </div>
@@ -64,22 +64,21 @@ export default {
 
 .goal p {
     position: relative;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     color: #000000;
 }
 
-h1 {
+h3 {
     position: relative;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #000000;
-    text-transform: uppercase;
 }
 
-h5 {
+h4 {
     position: relative;
     font-size: 2vw;
     color: #000000;
-    background-color: rgb(127, 200, 255);
+    background-color: rgb(148, 208, 255);
     border-radius: 5px;
 }
 </style>
