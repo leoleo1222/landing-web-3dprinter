@@ -1,14 +1,14 @@
 <template>
-    <BgComp/>
+    <FlowComp/>
 </template>
   
 <script>
 // @ is an alias to /src
-import BgComp from "@/components/BgComp.vue";
+import FlowComp from "@/components/FlowComp.vue";
 export default {
     name: "AView",
     components: {
-        BgComp,
+        FlowComp,
     },
 };
 </script>
