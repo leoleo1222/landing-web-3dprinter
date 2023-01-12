@@ -20,7 +20,6 @@
     <div class="slideInRight">Affordable</div>
     <div class="slideInRight">Expendable</div>
   </div>
-  </div>
 </template>
 
 <script>
