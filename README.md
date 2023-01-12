@@ -35,8 +35,4 @@ http://localhost:5000/
 Template
 https://demo.templatemonster.com/demo/52524.html?_gl=1*11nxqsp*_ga*MjA2MzY2NjQ4My4xNjczNDI4MTUx*_ga_FTPYEGT5LY*MTY3MzQyODE1MC4xLjAuMTY3MzQyODE1MC42MC4wLjA.&_ga=2.21920059.1038690767.1673428151-2063666483.1673428151
 
-Theme Color:
-#3f7fa1
-#3c4782
-#c0588e
-
+[Colour for the website](https://getbootstrap.com/docs/5.3/customize/color/)
