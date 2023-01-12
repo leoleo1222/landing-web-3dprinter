@@ -1,10 +1,8 @@
 <template>
   <div class="container pt-4">
     <div class="textbox">
-      <h2 data-text="3D PRINTING" class="my-2">3D PRINTING</h2>
-    </div>
-
-    <div >    
+      <h2 data-text="3D PRINTING">3D PRINTING</h2>
+    </div>  
 
     <h3>
       Barriers when facing 3D printing: 
