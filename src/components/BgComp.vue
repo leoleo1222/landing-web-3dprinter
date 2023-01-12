@@ -55,7 +55,7 @@ export default {
 }
 
 body {
-  background: #1c5f83;
+  background: #277ca9;
 }
 
 .textbox {
