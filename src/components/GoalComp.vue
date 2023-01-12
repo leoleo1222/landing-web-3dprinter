@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="card-footer text-muted gap">
-                    slogan like "Child can gain high"?
+                    Bringing your ideas to life, layer by layer.
                 </div>
             </div>
         </div>
