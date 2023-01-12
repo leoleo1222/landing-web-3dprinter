@@ -22,7 +22,7 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link active" aria-current="page" to="/jenny">
-              Jenny
+              Goal
             </router-link>
           </li>
         </ul>
