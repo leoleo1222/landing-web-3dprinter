@@ -38,6 +38,6 @@ http://localhost:5000/
 
 Theme Color:
 
-![#3f7fa1](https://placehold.co/15x15/f03c15/3f7fa1.png) `#3f7fa1`
-![#3c4782](https://placehold.co/15x15/f03c15/3c4782.png) `#3c4782`
-![#c0588e](https://placehold.co/15x15/f03c15/c0588e.png) `#c0588e`
+![#3f7fa1](https://placehold.co/15x15/3f7fa1/3f7fa1.png) `#3f7fa1`
+![#3c4782](https://placehold.co/15x15/3c4782/3c4782.png) `#3c4782`
+![#c0588e](https://placehold.co/15x15/c0588e/c0588e.png) `#c0588e`
