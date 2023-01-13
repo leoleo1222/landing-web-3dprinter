@@ -12,36 +12,48 @@
       <label for='software'>Software</label>
     </div>
   </div>
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin-top: 10%;">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="../assets/hardware-pc.jpg" class="d-block w-100" alt="hardware-pc.jpg">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="../assets/hardware-pc.jpg" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="" class="d-block w-100" alt="">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  <swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation
+                :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper"
+                @slideChange="onSlideChange" style="margin-top: 10%;">
+                <swiper-slide> <img src="../assets/3Dprinter.jpg" class="d-block w-100" /></swiper-slide>
+                <swiper-slide> <img src="../assets/hardware-pc.jpg" class="d-block w-100" /></swiper-slide>
+              </swiper>
 </template>
 
 <script>
-// @ is an alias to /src
-export default {
-  name: "FlowComp",
-  components: {
-  },
-};
+  // import Swiper core and required modules
+  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+
+  // Import Swiper styles
+  export default {
+    name: 'FlowComp',
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+        modules: [Navigation, Pagination, Scrollbar, A11y],
+      };
+    },
+  };
 </script>
 
 <style>
