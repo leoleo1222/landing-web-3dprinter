@@ -5,29 +5,28 @@
                 <h3>Goal</h3>
             </div>
             <div class="row">
-                <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal" style="width: 12rem;">
+                <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal1" style="width: 12rem;">
 
-                    <h4 class="card-title">School</h4>
-                    <p class="card-text">get access to 3D printing technology in a human-friendly way</p>
+                    <h4 class="card-title goal1Head">School</h4>
+                    <p class="card-text content">get access to 3D printing technology in a human-friendly way</p>
                 </div>
 
-                <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal" style="width: 12rem;">
-                    <h4 class="card-title">Students</h4>
-                    <p class="card-text">design and print their own 3D models</p>
-                    <p class="card-text">discover the world of 3D printing</p>
-                    <p class="card-text">explore creativity, imagination and unlock their potential with 3D printing
+                <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal2" style="width: 12rem;">
+                    <h4 class="card-title goal2Head">Students</h4>
+                    <p class="card-text content">design and print their own 3D models</p>
+                    <p class="card-text content">explore creativity, imagination and unlock their potential with 3D printing
                     </p>
                 </div>
 
-                <div data-aos="flip-left" class="card col-md-4 col-lg-4 card-body mx-3 my-3 goal"
+                <div data-aos="flip-left" class="card col-md-4 col-lg-4 card-body mx-3 my-3 goal3"
                     style="width: 12rem;">
-                    <h4 class="card-title">Society</h4>
-                    <p class="card-text ">provide an additional way to strengthen the basics of 3D-printing learners
+                    <h4 class="card-title goal3Head">Society</h4>
+                    <p class="card-text content">provide an additional way to strengthen the basics of 3D-printing learners
                     </p>
                 </div>
 
                 <div class="card-footer text-muted gap">
-                    Bringing your ideas to life, layer by layer.
+                    <p class="card-text slogan">Bringing your ideas to life, layer by layer.</p>
                 </div>
             </div>
         </div>
@@ -57,28 +56,66 @@ export default {
     background: #00000000;
     position: relative;
 }
-.goal {
-    background: #2e90a413;
+.goal1 {
+    background: #3f7fa171;
     position: relative;
 }
 
-.goal p {
+.goal2 {
+    background: #3c47826a;
     position: relative;
-    font-size: 1.3vw;
-    color: #000000;
 }
 
-h3 {
+.goal3 {
+    background: #c0588e90;
     position: relative;
-    font-size: 3.5vw;
-    color: #000000;
 }
 
-h4 {
+.goal1Head {
     position: relative;
     font-size: 2vw;
-    color: #000000;
-    background-color: rgb(148, 208, 255);
+    color: #FFFFFF;
+    background-color: #3f7fa1;
     border-radius: 5px;
 }
+
+.goal2Head {
+    position: relative;
+    font-size: 2vw;
+    color: #FFFFFF;
+    background-color: #3c4782;
+    border-radius: 5px;
+}
+
+.goal3Head {
+    position: relative;
+    font-size: 2vw;
+    color: #FFFFFF;
+    background-color: #c0588e;
+    border-radius: 5px;
+}
+
+.content {
+    position: relative;
+    font-size: 1.3vw;
+    color: #FFFFFF;
+}
+
+.slogan {
+    position: relative;
+    font-style: italic;
+    font-size: 1.3vw;
+    color: #e7c87d;
+
+}
+
+/* "Goal" */
+h3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: #f1b015;
+}
+
+
 </style>
