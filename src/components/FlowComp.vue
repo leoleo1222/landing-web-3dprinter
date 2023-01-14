@@ -25,8 +25,9 @@
     style="margin-top: 10%; user-select: none"
   >
     <swiper-slide>
-      <img src="../assets/hardware-pc.jpg" class="d-block w-100"
-    /></swiper-slide>
+      <img src="../assets/hardware-pc.jpg" class="d-block w-100" />
+      <div class="content">12321</div>
+    </swiper-slide>
     <swiper-slide>
       <img src="../assets/hardware-pi.jpg" class="d-block w-100"
     /></swiper-slide>
@@ -148,5 +149,12 @@ img {
   position: relative;
   width: 100%;
   height: 600px;
+}
+
+.content {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #ffffff;
 }
 </style>
