@@ -2,58 +2,74 @@
   <div class="heading">
     <h1><b>Operation</b></h1>
   </div>
-  <div class='switch'>
-    <div class='operation'>
-      <input checked id='hardware' name='operation' type='radio' value='hw'>
-      <label for='hardware'>Hardware</label>
+  <div class="switch">
+    <div class="operation">
+      <input checked id="hardware" name="operation" type="radio" value="hw" />
+      <label for="hardware">Hardware</label>
     </div>
-    <div class='operation'>
-      <input id='software' name='operation' type='radio' value='sw'>
-      <label for='software'>Software</label>
+    <div class="operation">
+      <input id="software" name="operation" type="radio" value="sw" />
+      <label for="software">Software</label>
     </div>
   </div>
-  <swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation
-                :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper"
-                @slideChange="onSlideChange" style="margin-top: 10%;">
-                <swiper-slide> <img src="../assets/3Dprinter.jpg" class="d-block w-100" /></swiper-slide>
-                <swiper-slide> <img src="../assets/hardware-pc.jpg" class="d-block w-100" /></swiper-slide>
-              </swiper>
+  <swiper
+    :modules="modules"
+    :slides-per-view="1"
+    :space-between="50"
+    navigation
+    :loop="true"
+    :pagination="{ clickable: true }"
+    :scrollbar="{ draggable: true }"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+    style="margin-top: 10%; user-select: none"
+  >
+    <swiper-slide>
+      <img src="../assets/hardware-pc.jpg" class="d-block w-100"
+    /></swiper-slide>
+    <swiper-slide>
+      <img src="../assets/hardware-pi.jpg" class="d-block w-100"
+    /></swiper-slide>
+    <swiper-slide>
+      <img src="../assets/3Dprinter.jpg" class="d-block w-100"
+    /></swiper-slide>
+  </swiper>
 </template>
 
 <script>
-  // import Swiper core and required modules
-  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
 
-  // Import Swiper styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
-  import 'swiper/css/scrollbar';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-  // Import Swiper styles
-  export default {
-    name: 'FlowComp',
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-        modules: [Navigation, Pagination, Scrollbar, A11y],
-      };
-    },
-  };
+// Import Swiper styles
+export default {
+  name: "FlowComp",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
+    };
+  },
+};
 </script>
 
 <style>
@@ -69,7 +85,6 @@ html {
 
 .heading {
   margin-top: 5%;
-  font-size: 3vw;
   color: #f1b015;
   text-transform: uppercase;
   font-family: "Century Gothic", sans-serif;
@@ -79,12 +94,12 @@ html {
 
 .switch {
   position: absolute;
-  margin-top: 2%;
+  margin-top: 1%;
   width: 30%;
-  height: 5.5%;
+  /*height: 5%;*/
   border-bottom: 3px solid #f1b015;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 150%;
   /*border-radius: 10px;*/
 }
 
@@ -92,16 +107,8 @@ html {
   position: relative;
   display: inline-block;
   width: 50%;
-  height: 101%;
-  line-height: 40px;
-}
-
-.operation:first-child label {
-  /*border-radius: 5px 0 0 5px;*/
-}
-
-.operation:last-child label {
-  /*border-radius: 0 5px 5px 0;*/
+  /*height: 101%;*/
+  line-height: 150%;
 }
 
 .operation label {
@@ -128,12 +135,12 @@ html {
   outline-offset: 0;
 }
 
-.operation input[type="radio"]:checked~label {
+.operation input[type="radio"]:checked ~ label {
   background-color: #f1b015;
   color: #1d1d1d;
 }
 
-.operation input[type="radio"]:active~label {
+.operation input[type="radio"]:active ~ label {
   transform: scale(1.05);
 }
 
