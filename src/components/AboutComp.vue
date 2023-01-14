@@ -4,22 +4,21 @@
       :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">
       <!-- set a image height with 50%-->
       <swiper-slide>
-        <img src="../assets/about_us_2.png" alt="Responsive image" style=" height: 50%; width: 100%;">
+        <img src="../assets/about_us_2.png" alt="Responsive image" style=" height: 70%; width: 100%;"/>
+        <!-- add a text at the bottom right above the image with absolute position-->
+        <div style="position: absolute; bottom: 0; left: 0;">
+          <h2 class="slideInRight" data-text="About Us">About Us</h2>
+        </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/about_us_1.png" alt="Responsive image" style=" height: 50%; width: 100%;">
+        <img src="../assets/about_us_1.png" alt="Responsive image" style=" height: 50%; width: 100%;"/>
+        <div style="position: absolute; bottom: 0; left: 0;">
+          <h2 class="slideInRight" data-text="Our Working Place">Our Working Place</h2>
+        </div>
       </swiper-slide>
 
     </swiper>
   </div>
-
-
-  <div
-          class="advantage1 mt-2 p-2 bg-secondary text-white rounded"
-          data-aos="fade-left"
-        >
-          <h1 class="title1">About Us</h1>
-        </div>
   <h3><span class="text-primary"> Who</span> We Are</h3>
   <p>All of our team members are students from the Department of Computer Science, Hong Kong Baptist University. The
     technique needed
@@ -132,6 +131,7 @@ body {
   background: #0bf;
   text-align: center;
 }
+
 .title1,
 .title2 {
   transition: 0.3s;
@@ -150,6 +150,7 @@ body {
 .box:hover .title1 {
   opacity: 0;
 }
+
 .box:hover .title2 {
   opacity: 1;
 }
@@ -162,7 +163,7 @@ h2 {
   position: relative;
   font-size: calc(12px + 8vw);
   color: #161a52;
-  -webkit-text-stroke: 0.3vw #f1b015;
+  -webkit-text-stroke: 0.3vw #6b4e09;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -186,6 +187,7 @@ h5 {
 }
 
 @keyframes animate {
+
   0%,
   10%,
   100% {
@@ -216,17 +218,20 @@ h5 {
     transform: translateX(100%);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
+
 @keyframes slideInRight {
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -241,22 +246,26 @@ h5 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
+
   50% {
     opacity: 1;
   }
 }
+
 @keyframes zoomIn {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
+
   50% {
     opacity: 1;
   }
