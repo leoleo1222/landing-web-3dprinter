@@ -8,21 +8,22 @@
                 <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal1" style="width: 12rem;">
 
                     <h4 class="card-title goal1Head">School</h4>
-                    <p class="card-text content">get access to 3D printing technology in a human-friendly way</p>
+                    <p class="card-text goalcontent">easy access to 3D printing technology</p>
                 </div>
 
                 <div data-aos="flip-left" class="card col-md-4 card-body mx-3 my-3 goal2" style="width: 12rem;">
                     <h4 class="card-title goal2Head">Students</h4>
-                    <p class="card-text content">design and print their own 3D models</p>
-                    <p class="card-text content">explore creativity, imagination and unlock their potential with 3D printing
-                    </p>
+                    <p class="card-text goalcontent">design and print their own 3D models</p>
+                    <p class="card-text goalcontent">explore Creativity, Imagination, Potential in Technology</p>
                 </div>
 
                 <div data-aos="flip-left" class="card col-md-4 col-lg-4 card-body mx-3 my-3 goal3"
                     style="width: 12rem;">
                     <h4 class="card-title goal3Head">Society</h4>
-                    <p class="card-text content">provide an additional way to strengthen the basics of 3D-printing learners
-                    </p>
+                    <p class="card-text goalcontent">All-in-one deployment solution</p>
+                    <p class="card-text goalcontent">More 3D printing learners</p>
+                    <p class="card-text goalcontent">strengthen basics of 3D-printing learners</p>
+                    
                 </div>
 
                 <div class="card-footer text-muted gap">
@@ -95,7 +96,7 @@ export default {
     border-radius: 5px;
 }
 
-.content {
+.goalcontent {
     position: relative;
     font-size: 1.3vw;
     color: #FFFFFF;
