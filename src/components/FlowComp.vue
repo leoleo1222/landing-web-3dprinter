@@ -2,19 +2,12 @@
   <div class="heading">
     <h1><b>Operation</b></h1>
   </div>
-  <div class="switch">
-    <div class="operation">
-      <input checked id="hardware" name="operation" type="radio" value="hw" />
-      <label for="hardware">Hardware</label>
-    </div>
-    <div class="operation">
-      <input id="software" name="operation" type="radio" value="sw" />
-      <label for="software">Software</label>
-    </div>
+  <div style="margin-top: 2%;">
+    <h2 class="operation-type">HARDWARE</h2>
   </div>
   <swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation :loop="true"
     :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange"
-    style="margin-top: 10%; user-select: none">
+    style="margin-top: 3%; user-select: none">
     <swiper-slide>
       <img src="../assets/Server.jpg" class="d-block w-100" />
       <div class="content">
@@ -22,7 +15,8 @@
           <h1><b>Server</b></h1>
           <p>
             <b>
-              The server will host the website for receiving the print job submitted by the user. Then it will schedule
+              The server will host the website for receiving the print job submitted by the user. Then it will
+              schedule
               and assign the printing job to the connected printer. It will also receive the states of the printer and
               display on the website.
             </b>
@@ -55,7 +49,8 @@
           <h1><b>Printer Assemble</b></h1>
           <p>
             <b>
-              The 3D printer series will contain different options of printer with different print volume and functions.
+              The 3D printer series will contain different options of printer with different print volume and
+              functions.
               From 20cm x 20cm x 20cm to 40cm x 40cm x 40cm. The printer could be easily assembled by following the
               assembly guide.
             </b>
@@ -70,7 +65,8 @@
           <h1><b>Software Manual</b></h1>
           <p>
             <b>
-              The software manual will be a document that describes how to use the website. The document will be written
+              The software manual will be a document that describes how to use the website. The document will be
+              written
               in English and Chinese. The document will be provided to the users through the website.
             </b>
           </p>
@@ -84,8 +80,10 @@
           <h1><b>Front-end Interface</b></h1>
           <p>
             <b>
-              The front-end interface will be a website that allows users to upload 3D models created via the Blender
-              software application and print them. The website will also provide a tutorial for users to learn how to
+              The front-end interface will be a website that allows users to upload 3D models created via the
+              Blender
+              software application and print them. The website will also provide a tutorial for users to learn how
+              to
               use the website and the printer.
             </b>
           </p>
@@ -111,7 +109,7 @@
 
 <script>
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -139,12 +137,34 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y],
+      modules: [Navigation, Pagination],
     };
+  },
+  mounted() {
+    var type = document.getElementsByClassName("operation-type")
+    var nextpre = [document.querySelector(".swiper-button-next"), document.querySelector(".swiper-button-prev")]
+    type[0].classList.add("operation-type-animation")
+    nextpre.forEach(element => {
+      element.addEventListener("click", () => {
+        type[0].classList.remove("operation-type-animation")
+        var butlet = document.getElementsByClassName("swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal");
+        for (var i = 0; i < butlet[0].children.length; i++) {
+          if (i > 2) {
+            if (butlet[0].children[i].className == "swiper-pagination-bullet swiper-pagination-bullet-active") {
+              type[0].innerHTML = "SOFTWARE"
+            }
+          } else {
+            type[0].innerHTML = "HARDWARE"
+          }
+          if ((butlet[0].children[3].className == "swiper-pagination-bullet swiper-pagination-bullet-active") || (butlet[0].children[0].className == "swiper-pagination-bullet swiper-pagination-bullet-active")) {
+            type[0].classList.add("operation-type-animation")
+          }
+        }
+      });
+    });
   },
 };
 </script>
-
 <style>
 /*------title------*/
 
@@ -162,59 +182,26 @@ html {
   text-transform: uppercase;
 }
 
-/*------radio button------*/
-
-.switch {
-  position: absolute;
-  margin-top: 1%;
-  width: 30%;
-  /*height: 5%;*/
-  border-bottom: 3px solid #f1b015;
-  color: #ffffff;
-  font-size: 150%;
-  /*border-radius: 10px;*/
+.operation-type {
+  font-family: "Century Gothic", sans-serif;
+  color: aliceblue;
 }
 
-.operation {
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  /*height: 101%;*/
-  line-height: 150%;
+.operation-type-animation {
+  animation: operation-type 2s;
 }
 
-.operation label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 101%;
-  cursor: pointer;
-  /*font-style: italic;*/
-  text-align: center;
-  transition: transform 0.4s, color 0.4s, background-color 0.4s;
+@keyframes operation-type {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.operation input[type="radio"] {
-  appearance: none;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-
-.operation input[type="radio"]:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.operation input[type="radio"]:checked~label {
-  background-color: #f1b015;
-  color: #1d1d1d;
-}
-
-.operation input[type="radio"]:active~label {
-  transform: scale(1.05);
-}
+/*------swiper------*/
 
 img {
   position: relative;
