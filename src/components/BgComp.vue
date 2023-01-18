@@ -6,7 +6,7 @@
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
         <br>
     <article class="postcard dark blue" style="padding: 0px;">
-      <a class="postcard__img_link" href="#">
+      <a class="postcard__img_link" href="#" style="overflow: hidden">
         <img
           class="postcard__img"
           src="../assets/goal3.jpg"
@@ -28,7 +28,7 @@
       </div>
     </article>
 
-    <h2 class="pt-2 text-white">Our 3D printing solution:</h2>
+    <h2 style="color:#313aaf">Our 3D printing solution:</h2>
     <br>
    <!-- Part for the cards -->
     <div class="container" style="padding: 0px">
@@ -94,7 +94,7 @@ export default {
 }
 
 body {
-  background: rgba(0, 5, 40, 0.4);
+  background: #ededed;
 }
 
 
@@ -113,7 +113,7 @@ h2.effect {
   position: relative;
   font-size: calc(12px + 8vw);
   color: #161a52;
-  -webkit-text-stroke: 0.3vw #f1b015;
+  -webkit-text-stroke: 0.3vw #313aaf;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -125,9 +125,9 @@ h2.effect::before {
   left: 0;
   width: 0;
   height: 100%;
-  color: #f1b015;
+  color: #313aaf;
   -webkit-text-stroke: 0vw #161a52;
-  border-right: 2px solid #f1b015;
+  border-right: 2px solid #313aaf;
   overflow: hidden;
   animation: animate 2.5s linear infinite;
 }
@@ -194,7 +194,7 @@ body {
 }
 
 .dark {
-  background: #110f16;
+  background: #313aaf;
 }
 
 a,
@@ -212,8 +212,8 @@ a:hover {
   margin: 0 0 2rem 0;
   overflow: hidden;
   position: relative;
-  color: #ffffff;
-  background: #18151f;
+  color: #313aaf;
+  background: #ffffff;
 }
 
 .postcard.light {
@@ -299,13 +299,13 @@ a:hover {
     content: "";
     position: absolute;
     display: block;
-    background: #18151f;
+    background: #313aaf;
     top: -20%;
     height: 130%;
     width: 55px;
   }
   .postcard:hover .postcard__img {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   .postcard:nth-child(2n + 1) {
     flex-direction: row;
@@ -333,11 +333,11 @@ a:hover {
     display: block;
     top: -20%;
     height: 130%;
-    width: 55px;
+    width: 35px;
   }
 
   .postcard.dark .postcard__text:before {
-    background: #18151f;
+    background: #313aaf;
   }
 
   .postcard.light .postcard__text:before {
@@ -347,15 +347,15 @@ a:hover {
 
 /* COLORS */
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #f1b015;
+  background: #313aaf;
 }
 
 .blue .postcard__title:hover {
-  color: #f1b015;
+  color: #11187b;
 }
 
 .blue .postcard__bar {
-  background-color: #f1b015;
+  background-color: #313aaf;
 }
 
 .blue::before {
@@ -401,10 +401,13 @@ a:hover {
   border-radius: 0;
   color:rgba(0,0,0,1);
   letter-spacing: .05rem;
-  font-family: 'Oswald', sans-serif;
-  background: #18151f;
+  background: #313aaf;
   color: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,.27);
+}
+
+.card.gr:hover{
+   background: #11187b;
 }
 
 .advantages_title{
