@@ -10,7 +10,7 @@
     style="margin-top: 3%; user-select: none">
     <swiper-slide>
       <img src="../assets/Server.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>Server</b></h1>
           <p>
@@ -26,7 +26,7 @@
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/hardware-pi.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>drives</b></h1>
           <h3><b>Minimum requirement</b></h3>
@@ -44,7 +44,7 @@
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/3Dprinter.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>Printer Assemble</b></h1>
           <p>
@@ -60,7 +60,7 @@
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/hardware-pc.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>Software Manual</b></h1>
           <p>
@@ -75,7 +75,7 @@
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/front-end.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>Front-end Interface</b></h1>
           <p>
@@ -92,7 +92,7 @@
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/coding.jpg" class="d-block w-100" />
-      <div class="content">
+      <div class="operation-content">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h1><b>Website</b></h1>
           <p>
@@ -209,7 +209,7 @@ img {
   height: 600px;
 }
 
-.content {
+.operation-content {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -221,19 +221,19 @@ img {
   font-family: "Century Gothic", sans-serif;
 }
 
-.content h1 {
+.operation-content h1 {
   text-transform: uppercase;
   color: #f1b015;
   font-size: calc(10px + 1.5vw);
 }
 
-.content h3 {
+.operation-content h3 {
   padding-top: 5%;
   text-transform: uppercase;
   color: #f1b015;
 }
 
-.content p,
+.operation-content p,
 ul {
   font-size: 130%;
   line-height: 200%;
