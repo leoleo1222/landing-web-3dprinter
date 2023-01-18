@@ -5,7 +5,7 @@
     <img
       src="../assets/about_us_1.png"
       alt="Responsive image"
-      style="width: 70vw; height: auto; margin: 10px 0px"
+      style="height: 50%; width: 100%"
     />
   </div>
 
@@ -55,6 +55,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50rem;
+  width: 70%;
 }
 </style>

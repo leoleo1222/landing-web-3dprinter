@@ -199,7 +199,7 @@ body {
 a,
 a:hover {
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s;
 }
 
 /* POSTCARD */
