@@ -5,16 +5,16 @@
     <img
       src="../assets/about_us_1.png"
       alt="Responsive image"
-      style="height: 50%; width: 100%;"
+      style="width: 70vw; height: auto; margin: 10px 0px"
     />
   </div>
 
   <center class="aboutus_text">
-  We are a group of students from the Department of Computer Science,
-   HKBU. We saw the difficulties for promoting STEAM and 3D Printing 
-   in schools. We think it was a pity for the students to miss out on 
-   the opportunities to learn about these technologies. Therefore, 
-   we come with this project “Printify”.
+    We are a group of students from the Department of Computer Science, HKBU. We
+    saw the difficulties for promoting STEAM and 3D Printing in schools. We
+    think it was a pity for the students to miss out on the opportunities to
+    learn about these technologies. Therefore, we come with this project
+    “Printify”.
   </center>
 </template>
 
@@ -47,12 +47,14 @@ body {
   margin-top: 10px;
 }
 
-.aboutus_text{
+.aboutus_text {
   color: white;
 }
 
-.aboutus_container{
-  
+.aboutus_container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50rem;
 }
-
 </style>
