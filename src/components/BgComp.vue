@@ -186,7 +186,6 @@ h5 {
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 /* This pen */
 body {
-  font-family: "Baloo 2", cursive;
   font-size: 16px;
   color: #ffffff;
   text-rendering: optimizeLegibility;
