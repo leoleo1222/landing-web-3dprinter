@@ -53,8 +53,7 @@ body {
 
 .aboutus_container {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  margin: 15px auto;
+  width: 75%;
 }
 </style>
