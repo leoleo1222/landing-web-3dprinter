@@ -3,45 +3,48 @@
   <!-- <div class="row" style="background: red">Hi</div> -->
 
   <div class="container">
-    <h2 data-text="3D PRINTING">3D PRINTING</h2>
-
-    <article class="postcard dark blue" style="padding: 0px">
+    <!-- <div class="just for margin" style="margin-top:10px"></div> -->
+        <br>
+    <article class="postcard dark blue" style="padding: 0px;">
       <a class="postcard__img_link" href="#">
         <img
           class="postcard__img"
-          src="https://picsum.photos/1000/1000"
+          src="../assets/goal3.jpg"
           alt="Image Title"
         />
       </a>
       <div class="postcard__text">
-        <h1 class="postcard__title blue"><a>Background</a></h1>
+        <h1 class="postcard__title blue"><a>BACKGROUND</a></h1>
         <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt">
+        <p class="postcard__preview-txt" style="padding-top: 10px">
           STEAM has become a popular concept among the education industry. Many
           schools have started to implement STEAM education in their curriculum.
-        </div>
+        </p>
+
+        <p class="postcard__preview-txt" style="padding-top: 10px">
+          However, schools had faced difficulties to get new technology into campus.
+          To further promote STEAM education, we have developed 'Printfy'.
+        </p>
       </div>
     </article>
 
-    <h3 class="pt-2 text-white">Our 3D printing solution:</h3>
+    <h2 class="pt-2 text-white">Our 3D printing solution:</h2>
     <br>
-
-
    <!-- Part for the cards -->
     <div class="container" style="padding: 0px">
       <div class="row align-middle">
-        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1000">
           <div class="card gr">
             <div class="txt">
-              <h1 class="advantages_title">EASY TO USE</h1>
+              <h2 class="advantages_title">EASY TO USE</h2>
               <p>The printer is designed to be simple and easy to use in school environment.</p></div>
 
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1750">
           <div class="card gr">
             <div class="txt">
-              <h1 class="advantages_title">AFFORDABLE</h1>
+              <h2 class="advantages_title">AFFORDABLE</h2>
               <p>Schools could start their 3D printing lab with only one printer.</p>
             </div>
           </div>
@@ -49,7 +52,7 @@
         <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="2500">
           <div class="card gr">
             <div class="txt">
-              <h1 class="advantages_title">EXPANDABLE</h1>
+              <h2 class="advantages_title">EXPANDABLE</h2>
               <p>Possible to further upgrade and expand the lab with more and better printers.</p>
             </div>
           </div>
@@ -77,6 +80,7 @@ export default {
 </script>
 
 <style>
+/* This part by Raymond */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .container {
@@ -93,20 +97,6 @@ body {
   background: rgba(0, 5, 40, 0.4);
 }
 
-.advantage {
-  background-color: #3f7fa1 !important;
-  overflow: hidden;
-  width: calc(20vw+50px);
-  height: calc(30vh);
-}
-
-.advantageBox {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  min-width: 100%;
-  min-height: 300%;
-}
 
 .title2 {
   padding: 60% 0% 0% 0%;
@@ -119,7 +109,7 @@ body {
   align-items: center;
 }
 
-h2 {
+h2.effect {
   position: relative;
   font-size: calc(12px + 8vw);
   color: #161a52;
@@ -128,7 +118,7 @@ h2 {
   white-space: nowrap;
 }
 
-h2::before {
+h2.effect::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -136,7 +126,7 @@ h2::before {
   width: 0;
   height: 100%;
   color: #f1b015;
-  -webkit-text-stroke: 0vw #1c5f83;
+  -webkit-text-stroke: 0vw #161a52;
   border-right: 2px solid #f1b015;
   overflow: hidden;
   animation: animate 2.5s linear infinite;
@@ -207,10 +197,6 @@ body {
   background: #110f16;
 }
 
-.light {
-  background: #f3f5f7;
-}
-
 a,
 a:hover {
   text-decoration: none;
@@ -222,7 +208,7 @@ a:hover {
   flex-wrap: wrap;
   display: flex;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-  border-radius: 10px;
+  border-radius: 0px;
   margin: 0 0 2rem 0;
   overflow: hidden;
   position: relative;
@@ -263,7 +249,7 @@ a:hover {
   transition: width 0.2s ease;
 }
 .postcard .postcard__text {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -285,7 +271,6 @@ a:hover {
   left: 0;
   background-image: linear-gradient(-70deg, #424242, transparent 50%);
   opacity: 1;
-  border-radius: 10px;
 }
 .postcard:hover .postcard__bar {
   width: 100px;
@@ -362,15 +347,15 @@ a:hover {
 
 /* COLORS */
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0076bd;
+  background: #f1b015;
 }
 
 .blue .postcard__title:hover {
-  color: #0076bd;
+  color: #f1b015;
 }
 
 .blue .postcard__bar {
-  background-color: #0076bd;
+  background-color: #f1b015;
 }
 
 .blue::before {
@@ -410,8 +395,8 @@ a:hover {
 .card.gr{
   min-height:170px;
   margin: 0;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
   border: none;
   border-radius: 0;
   color:rgba(0,0,0,1);
@@ -423,7 +408,9 @@ a:hover {
 }
 
 .advantages_title{
-  min-height:4rem;
-  font-size: 10px + 2vw;
+  /*min-height:4rem;*/
+  font-size: 10px+2vw ;
 }
+
+/* This part by Raymond */
 </style>
