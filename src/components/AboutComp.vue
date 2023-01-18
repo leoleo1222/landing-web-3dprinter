@@ -16,12 +16,15 @@
     learn about these technologies. Therefore, we come with this project
     “Printify”.
   </center>
+
+  <br />
+  <div class="text-center">
+    <button type="button" class="btn btn-light" style="color: #313aaf">Contact us &#8594;</button>
+  </div>
 </template>
 
 <style>
-* {
-  font-family: "Poppins";
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 body {
   background: #313aaf;

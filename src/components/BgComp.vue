@@ -127,7 +127,6 @@ export default {
 </script>
 
 <style>
-/* This part by Raymond */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .container.bg {
