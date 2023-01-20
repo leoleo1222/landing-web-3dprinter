@@ -1,5 +1,6 @@
 <template>
-  <h2 class="aboutus_subtitle fw-bolder">Background</h2>
+  <div class="aboutus_bg">
+  <h2 class="aboutus_subtitle fw-bolder" >About us</h2>
 
   <div class="aboutus_container">
     <img
@@ -9,13 +10,14 @@
     />
   </div>
 
-  <center class="aboutus_text">
+  <center>
+  <h1 class="aboutus_text" style="padding: 5px">
     We are a group of students from the Department of Computer Science, HKBU. We
     saw the difficulties for promoting STEAM and 3D Printing in schools. We
     think it was a pity for the students to miss out on the opportunities to
     learn about these technologies. Therefore, we come with this project
     “Printify”.
-  </center>
+  </h1></center>
 
   <br />
   <div class="text-center">
@@ -23,6 +25,9 @@
       Contact us &#8594;
     </button>
   </div>
+  <br><br><br>
+  </div>
+  
 </template>
 
 <style>
@@ -43,6 +48,10 @@ body {
   position: absolute;
   top: 8px;
   left: 16px;
+}
+
+.aboutus_bg {
+  background-color: #313aaf;
 }
 
 .aboutus_subtitle {

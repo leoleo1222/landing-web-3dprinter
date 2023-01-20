@@ -7,29 +7,27 @@
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
 
     <h2 class="bg_subtitle fw-bolder">Background</h2>
-
-    <p class="bg_content fw-light" data-aos="zoom-out" data-aos-duration="1000">
-      The promotion of STEM education was first proposed in the 2015 Policy
-      Address and further supported in the 2016 Policy Address. Art was soonly
-      added to the program and became STEAM. Thanks to the effort contributed by
-      teachers and education workers, STEAM has become a popular concept among
-      the education industry. Many schools have started to implement STEAM
-      education in their curriculum which is a great step forward.
+  
+    <p class="bg_content fw-light" data-aos="zoom-out" data-aos-duration="1000" style="margin-top: 10px">
+      Thanks to the effort contributed by teachers and education workers, STEAM
+      has become a popular concept among the education industry. Many schools
+      have started to implement STEAM education in their curriculum which is a
+      great step forward.
     </p>
-
+    <br />
     <p class="bg_content" data-aos="zoom-out" data-aos-duration="2000">
-      We noticed the difficulties of attempting to bring technology into campus
-      attributed to concerns such as high set up cost and knowing where to
-      start.
+      We noticed the difficulties of attempting to bring 3D printing technology
+      into campus attributed to concerns such as high set up cost and knowing
+      where to start.
     </p>
-
-    <p class="bg_content" data-aos="zoom-out" data-aos-duration="3000">
+    <br />
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="3000" style="margin-bottom: 10px">
       To solve this problem, we developed an whole package for 3D printing.
       Tutorials will also be provided for the schools will guide through the
       processing from setting up the lab to beginner level tutorials of 3D
       modelling software (Blender).
     </p>
-
+    
     <div style="margin-bottom: 40px"></div>
 
     <!-- Part for the cards -->
@@ -46,7 +44,11 @@
                 Easy, <br />
                 Convenient
               </h2>
-              <normal class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
+              <normal
+                class="advantages_content"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+              >
                 The printer is designed to be simple and easy to use in school
                 environment.
               </normal>
@@ -61,8 +63,12 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Affordable</h2>
-              <normal class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
-                Schools could start their 3D printing lab with only one printer.
+              <normal
+                class="advantages_content"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+              >
+                Schools could start their 3D printing lab with only one printer.<br>
                 <br />
               </normal>
             </div>
@@ -76,7 +82,11 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Expandable</h2>
-              <normal class="advantages_content" data-aos="zoom-in"  data-aos-duration="1200">
+              <normal
+                class="advantages_content"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+              >
                 Possible to further upgrade and expand the lab with more and
                 better printers.
               </normal>
@@ -88,7 +98,11 @@
 
     <div style="margin-bottom: 40px"></div>
 
-    <p class="bg_content fw-light" style="text-align: center" data-aos="zoom-out">
+    <p
+      class="bg_content fw-light"
+      style="text-align: center"
+      data-aos="zoom-out"
+    >
       We hope through this project, we could help schools to get access of 3D
       printing technologies, help students to explore their possibilities,
       potentials and creativity which can help them explore their future career.
@@ -148,7 +162,7 @@ body {
 .bg_content {
   text-align: left;
   color: #313aaf;
-  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 1.8vw;
   font-weight: 400;
@@ -238,9 +252,13 @@ a:hover {
 
 .advantages_title {
   /*min-height:4rem;*/
-  font-size: calc(12px+2vw);
   font-weight: bold;
   margin-bottom: 1rem;
+
+  font-size: calc(10px + 2vw);
+  font-weight: 700;
+  font-weight: bold;
+  line-height: calc(1em + 1.5vw);
 }
 
 /*.navbar {
