@@ -25,12 +25,12 @@
                 <p class="goalcontent">• All-in-one and easy deployment solution</p>
                 <p class="goalcontent">• Lower the barrier for 3D modeling and printing</p>
                 <h4 data-aos="flip-right" data-aos-duration="2250" class="goalsubtitle">Youth</h4>
-                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent goalindent">• Provide an entry point for talented youth</p>
+                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent">• Provide an entry point for talented youth</p>
                 <h4 data-aos="flip-right" data-aos-duration="2250" class="goalsubtitle">Society</h4>
-                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent goalindent">• Open source and free to use <br />• Inspire the next generation of innovators
+                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent">• Open source and free to use <br />• Inspire the next generation of innovators
                     and leaders in the Tech industry</p>
                 <h4 data-aos="flip-right" data-aos-duration="2250" class="goalsubtitle">School</h4>
-                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent goalindent">• Promote the STEAM education by providing workshop materials</p>
+                <p data-aos="zoom-in-up" data-aos-duration="3000" class="goalcontent">• Promote the STEAM education by providing workshop materials</p>
 
             </div>
         </div>
@@ -84,10 +84,6 @@ export default {
     line-height: calc(1em + 1.5vw);
     color: #FFFFFF;
     position: relative;
-}
-
-.goalindent {
-    margin-left: 3vw;
 }
 
 .goalgap {
