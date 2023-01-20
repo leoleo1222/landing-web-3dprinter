@@ -30,7 +30,6 @@
       </div>
     </div>
   </nav>
-  
   <div class="container text-start">
     <router-view />
   </div>
@@ -43,8 +42,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 
@@ -54,6 +52,10 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ededed;
+}
+
+nav a.router-link-exact-active:hover {
+  color: #313aaf;
 }
 </style>

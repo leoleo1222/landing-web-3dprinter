@@ -1,7 +1,7 @@
 <template>
   <SloganComp />
-  <GoalComp />
   <BgComp />
+  <GoalComp />
   <FlowComp />
   <AboutComp />
 </template>
@@ -14,7 +14,6 @@ import GoalComp from "@/components/GoalComp.vue";
 import BgComp from "@/components/BgComp.vue";
 import FlowComp from "@/components/FlowComp.vue";
 
-
 export default {
   name: 'HomeView',
   components: {
@@ -22,7 +21,7 @@ export default {
     SloganComp,
     GoalComp,
     BgComp,
-    FlowComp
+    FlowComp,
   },
 
 }

@@ -2,32 +2,39 @@
   <!--This line is for texting -->
   <!-- <div class="row" style="background: red">Hi</div> -->
 
-  <div class="container bg">
+  <div class="container bg" style="margin: 0px">
     <br />
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
 
     <h2 class="bg_subtitle fw-bolder">Background</h2>
-  
-    <p class="bg_content fw-light" data-aos="zoom-out" data-aos-duration="1000" style="margin-top: 10px">
+
+    <p
+      class="bg_content" data-aos="zoom-out" data-aos-duration="1000" style="margin-top: 10px"
+    >
       Thanks to the effort contributed by teachers and education workers, STEAM
       has become a popular concept among the education industry. Many schools
       have started to implement STEAM education in their curriculum which is a
       great step forward.
     </p>
-    <br />
+
     <p class="bg_content" data-aos="zoom-out" data-aos-duration="2000">
       We noticed the difficulties of attempting to bring 3D printing technology
       into campus attributed to concerns such as high set up cost and knowing
       where to start.
     </p>
-    <br />
-    <p class="bg_content" data-aos="zoom-out" data-aos-duration="3000" style="margin-bottom: 10px">
+
+    <p
+      class="bg_content"
+      data-aos="zoom-out"
+      data-aos-duration="3000"
+      style="margin-bottom: 10px"
+    >
       To solve this problem, we developed an whole package for 3D printing.
       Tutorials will also be provided for the schools will guide through the
       processing from setting up the lab to beginner level tutorials of 3D
       modelling software (Blender).
     </p>
-    
+
     <div style="margin-bottom: 40px"></div>
 
     <!-- Part for the cards -->
@@ -44,14 +51,14 @@
                 Easy, <br />
                 Convenient
               </h2>
-              <normal
+              <h6
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
                 The printer is designed to be simple and easy to use in school
                 environment.
-              </normal>
+              </h6>
             </div>
           </div>
         </div>
@@ -63,14 +70,15 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Affordable</h2>
-              <normal
+              <h6
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
-                Schools could start their 3D printing lab with only one printer.<br>
+                Schools could start their 3D printing lab with only one
+                printer.
                 <br />
-              </normal>
+              </h6>
             </div>
           </div>
         </div>
@@ -82,14 +90,14 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Expandable</h2>
-              <normal
+              <h6
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
                 Possible to further upgrade and expand the lab with more and
                 better printers.
-              </normal>
+              </h6>
             </div>
           </div>
         </div>
@@ -107,6 +115,8 @@
       printing technologies, help students to explore their possibilities,
       potentials and creativity which can help them explore their future career.
     </p>
+
+    <!-- <div class="text-center" style="background: #ededed; color: #313aaf">HKBU</div> -->
   </div>
 </template>
 
@@ -124,17 +134,6 @@ export default {
   components: {},
 };
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.background = "#501e27";
-  } else {
-    document.getElementById("navbar").style.background = "none";
-  }
-}
 </script>
 
 <style>
@@ -151,12 +150,15 @@ body {
 }
 
 .bg_subtitle {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   font-family: "Poppins";
   color: #313aaf;
-  min-height: calc(9vh + 20px);
-  position: relative;
   text-align: center;
-  transform: translateY(40%);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-weight: bold;
+  font-size: 4.5vw;
 }
 
 .bg_content {
@@ -165,7 +167,7 @@ body {
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 1.8vw;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: calc(1em + 1.5vw);
   position: relative;
@@ -235,8 +237,7 @@ a:hover {
 }
 
 .card.gr {
-  min-height: 170px;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   border: none;
   border-radius: 10px;
@@ -254,7 +255,6 @@ a:hover {
   /*min-height:4rem;*/
   font-weight: bold;
   margin-bottom: 1rem;
-
   font-size: calc(10px + 2vw);
   font-weight: 700;
   font-weight: bold;

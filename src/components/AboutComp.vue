@@ -10,14 +10,13 @@
     />
   </div>
 
-  <center>
-  <h1 class="aboutus_text" style="padding: 5px">
+  <h1 class="aboutus_text text-center" style="padding: 5px">
     We are a group of students from the Department of Computer Science, HKBU. We
     saw the difficulties for promoting STEAM and 3D Printing in schools. We
     think it was a pity for the students to miss out on the opportunities to
     learn about these technologies. Therefore, we come with this project
     “Printify”.
-  </h1></center>
+  </h1>
 
   <br />
   <div class="text-center">
@@ -52,6 +51,7 @@ body {
 
 .aboutus_bg {
   background-color: #313aaf;
+  margin: 0px !important;
 }
 
 .aboutus_subtitle {
@@ -68,7 +68,7 @@ body {
   font-size: 1.8vw;
   font-weight: 400;
   font-style: normal;
-  line-height: calc(1em + 1.5vw);
+  line-height: calc(1em + 2vw);
   color: #ededed;
   position: relative;
 }

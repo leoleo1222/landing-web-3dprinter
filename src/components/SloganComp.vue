@@ -1,12 +1,12 @@
 <template>
     <meta charset="utf-8">
-
-    <div class="container py-0 px-0">
+    <div>
         <img src="../assets/slogan.jpg" class="img-fluid" alt="Responsive image"
             style="opacity: 65% ; height: 100%; width: 100%;">
-        <div data-aos="fade-up" class="slogan"> Bringing your ideas to life, <br/> layer by
+        <div data-aos="fade-up" class="slogan text-center"> Bringing your ideas to life, <br/> layer by
             layer. </div>
     </div>
+
 
 </template>
 
@@ -31,10 +31,10 @@ export default {
 .slogan {
     font-family: "Poppins", sans-serif;
     position: absolute;
-    top: 21vw;
+    top: 33vh;
     left: 22vw;
-    width: 100%;
-    height: 100%;
+    transform: translate(0, -50%);
+    height: auto;
     font-size: 4vw;
     font-weight: 700;
     color: #FFFFFF;
