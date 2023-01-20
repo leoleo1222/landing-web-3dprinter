@@ -2,10 +2,34 @@
   <!--This line is for texting -->
   <!-- <div class="row" style="background: red">Hi</div> -->
 
-  <div class="container">
+  <div class="container bg">
+    <br />
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
-        <br>
-    <article class="postcard dark blue" style="padding: 0px;">
+
+    <h2 class="sub_title fw-bolder">Background</h2>
+
+    <p class="bg_content fw-light">
+      The promotion of STEM education was first proposed in the 2015 Policy
+      Address and further supported in the 2016 Policy Address. Art was soonly
+      added to the program and became STEAM. Thanks to the effort contributed by
+      teachers and education workers, STEAM has become a popular concept among
+      the education industry. Many schools have started to implement STEAM
+      education in their curriculum which is a great step forward.
+    </p>
+
+    <p class="bg_content">
+      We noticed the difficulties of attempting to bring technology into campus
+      attributed to concerns such as high set up cost and knowing where to
+      start.
+    </p>
+
+    <p class="bg_content">
+      To solve this problem, we developed an whole package for 3D printing.
+      Tutorials will also be provided for the schools will guide through the
+      processing from setting up the lab to beginner level tutorials of 3D
+      modelling software (Blender).
+    </p>
+    <!-- <article class="postcard dark blue" style="padding: 0px;">
       <a class="postcard__img_link" href="#" style="overflow: hidden">
         <img
           class="postcard__img"
@@ -26,41 +50,64 @@
           To further promote STEAM education, we have developed 'Printfy'.
         </p>
       </div>
-    </article>
+    </article> -->
 
-    <h2 style="color:#313aaf">Our 3D printing solution:</h2>
-    <br>
-   <!-- Part for the cards -->
-    <div class="container" style="padding: 0px">
+    <div style="margin-bottom: 40px"></div>
+
+    <!-- Part for the cards -->
+    <div class="advantage_container " style="padding: 0px">
       <div class="row align-middle">
-        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1000">
+        <div
+          class="col-md-4 col-lg-4"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div class="card gr">
-            <div class="txt">
-              <h2 class="advantages_title">EASY TO USE</h2>
-              <p>The printer is designed to be simple and easy to use in school environment.</p></div>
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1750">
-          <div class="card gr">
-            <div class="txt">
-              <h2 class="advantages_title">AFFORDABLE</h2>
-              <p>Schools could start their 3D printing lab with only one printer.</p>
+            <div class="advantages_text">
+              <h2 class="advantages_title">Easy, <br> Convenient </h2>
+              <small class="advantages_content">
+                The printer is designed to be simple and easy to use in school
+                environment.
+              </small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="2500">
+        <div
+          class="col-md-4 col-lg-4"
+          data-aos="fade-up"
+          data-aos-duration="2250"
+        >
           <div class="card gr">
-            <div class="txt">
-              <h2 class="advantages_title">EXPANDABLE</h2>
-              <p>Possible to further upgrade and expand the lab with more and better printers.</p>
+            <div class="advantages_text">
+              <h2 class="advantages_title"><br>Affordable</h2>
+              <small class="advantages_content"> Schools could start their 3D printing lab with only one printer. <br> </small>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-4"
+          data-aos="fade-up"
+          data-aos-duration="2750"
+        >
+          <div class="card gr">
+            <div class="advantages_text">
+              <h2 class="advantages_title"><br>Expandable</h2>
+              <small class="advantages_content">
+                Possible to further upgrade and expand the lab with more and
+                better printers.
+              </small>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <br /><br />
+    <div style="margin-bottom: 40px"></div>
+    
+    <p class="bg_content fw-light" style="text-align: center">
+     We hope through this project, we could help schools to get access of 3D printing 
+     technologies, help students to explore their possibilities, potentials and 
+     creativity which can help them explore their future career.</p>
   </div>
 </template>
 
@@ -80,23 +127,33 @@ export default {
 </script>
 
 <style>
-/* This part by Raymond */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.container {
+.container.bg {
   min-height: 100vh;
   justify-content: flex;
   overflow: hidden;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: #ededed;
 }
 
+.sub_title {
+  font-family: "Poppins";
+  color: #313aaf;
+  min-height: calc(9vh + 20px);
+  position: relative;
+  text-align: center;
+  transform: translateY(40%);
+}
+
+.bg_content {
+  font-family: "Poppins";
+  text-align: left;
+  color: #313aaf;
+  margin-top: 10px;
+}
 
 .title2 {
   padding: 60% 0% 0% 0%;
@@ -132,9 +189,6 @@ h2.effect::before {
   animation: animate 2.5s linear infinite;
 }
 
-h5 {
-  font-size: calc(4px + 2vw);
-}
 
 @keyframes animate {
   0%,
@@ -149,47 +203,10 @@ h5 {
   }
 }
 
-.slideInRight {
-  font-size: 3vw;
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 /* This pen */
 body {
-  font-size: 16px;
-  color: #ffffff;
-  text-rendering: optimizeLegibility;
-  font-weight: initial;
+  color: #ededed;
 }
 
 .dark {
@@ -199,10 +216,36 @@ body {
 a,
 a:hover {
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s;
 }
 
-/* POSTCARD */
+.card.gr {
+  min-height: 170px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 1);
+  background: hsl(236, 56%, 44%);
+  color: #ededed;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.27);
+}
+
+.card.gr:hover {
+  background: #11187b;
+}
+
+.advantages_title {
+  /*min-height:4rem;*/
+  font-size: 10px+2vw;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.advantages_content{
+ 
+}
+/*
 .postcard {
   flex-wrap: wrap;
   display: flex;
@@ -344,7 +387,7 @@ a:hover {
   }
 }
 
-/* COLORS */
+/*
 .postcard .postcard__tagbox .blue.play:hover {
   background: #313aaf;
 }
@@ -389,30 +432,6 @@ a:hover {
       transparent 50%
     );
   }
-}
+} */
 
-.card.gr{
-  min-height:170px;
-  margin: 0;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 0;
-  color:rgba(0,0,0,1);
-  letter-spacing: .05rem;
-  background: #313aaf;
-  color: white;
-  box-shadow: 3px 3px 5px rgba(0,0,0,.27);
-}
-
-.card.gr:hover{
-   background: #11187b;
-}
-
-.advantages_title{
-  /*min-height:4rem;*/
-  font-size: 10px+2vw ;
-}
-
-/* This part by Raymond */
 </style>
