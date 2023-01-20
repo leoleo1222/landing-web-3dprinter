@@ -92,31 +92,31 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
 .goal {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  font-weight: bold;
-  font-size: 4.5vw;
-  color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-weight: bold;
+    font-size: 4.5vw;
+    color: #ededed;
 }
 
 .goalsubtitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 3vw;
-  font-weight: 700;
-  font-weight: bold;
-  line-height: calc(1em + 1.5vw);
-  color: #ffffff;
-  position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    font-weight: bold;
+    line-height: calc(1em + 1.5vw);;
+    color: #ededed;
+    position: relative;
 }
 
 .goalcontent {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8vw;
-  font-weight: 400;
-  font-style: normal;
-  line-height: calc(1em + 1.5vw);
-  color: #ffffff;
-  position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-style: normal;
+    line-height: calc(1em + 1.5vw);
+    color: #ededed;
+    position: relative;
 }
 
 .goalgap {

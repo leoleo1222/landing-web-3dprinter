@@ -37,7 +37,7 @@ export default {
     height: auto;
     font-size: 4vw;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ededed;
     text-align: left;    
 }
 </style>
