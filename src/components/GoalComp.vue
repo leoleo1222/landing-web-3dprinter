@@ -63,7 +63,7 @@ export default {
     position: relative;
     font-weight: bold;
     font-size: 4.5vw;
-    color: #FFFFFF;
+    color: #ededed;
 }
 
 .goalsubtitle {
@@ -72,7 +72,7 @@ export default {
     font-weight: 700;
     font-weight: bold;
     line-height: calc(1em + 1.5vw);;
-    color: #FFFFFF;
+    color: #ededed;
     position: relative;
 }
 
@@ -82,7 +82,7 @@ export default {
     font-weight: 400;
     font-style: normal;
     line-height: calc(1em + 1.5vw);
-    color: #FFFFFF;
+    color: #ededed;
     position: relative;
 }
 
