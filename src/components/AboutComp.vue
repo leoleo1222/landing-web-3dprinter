@@ -1,5 +1,5 @@
 <template>
-  <h2 class="sub_title">About Us</h2>
+  <h2 class="aboutus_subtitle fw-bolder">Background</h2>
 
   <div class="aboutus_container">
     <img
@@ -19,7 +19,9 @@
 
   <br />
   <div class="text-center">
-    <button type="button" class="btn btn-light" style="color: #313aaf">Contact us &#8594;</button>
+    <button type="button" class="btn btn-light" style="color: #313aaf">
+      Contact us &#8594;
+    </button>
   </div>
 </template>
 
@@ -43,15 +45,23 @@ body {
   left: 16px;
 }
 
-.sub_title {
+.aboutus_subtitle {
+  font-family: "Poppins";
+  color: #ededed;
+  min-height: calc(9vh + 20px);
+  position: relative;
   text-align: center;
-  color: white;
-  font-weight: bold;
-  margin-top: 10px;
+  transform: translateY(40%);
 }
 
 .aboutus_text {
-  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 400;
+  font-style: normal;
+  line-height: calc(1em + 1.5vw);
+  color: #ededed;
+  position: relative;
 }
 
 .aboutus_container {

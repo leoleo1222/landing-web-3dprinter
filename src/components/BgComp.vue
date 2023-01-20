@@ -6,9 +6,9 @@
     <br />
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
 
-    <h2 class="sub_title fw-bolder">Background</h2>
+    <h2 class="bg_subtitle fw-bolder">Background</h2>
 
-    <p class="bg_content fw-light">
+    <p class="bg_content fw-light" data-aos="zoom-out" data-aos-duration="1000">
       The promotion of STEM education was first proposed in the 2015 Policy
       Address and further supported in the 2016 Policy Address. Art was soonly
       added to the program and became STEAM. Thanks to the effort contributed by
@@ -17,45 +17,23 @@
       education in their curriculum which is a great step forward.
     </p>
 
-    <p class="bg_content">
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="2000">
       We noticed the difficulties of attempting to bring technology into campus
       attributed to concerns such as high set up cost and knowing where to
       start.
     </p>
 
-    <p class="bg_content">
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="3000">
       To solve this problem, we developed an whole package for 3D printing.
       Tutorials will also be provided for the schools will guide through the
       processing from setting up the lab to beginner level tutorials of 3D
       modelling software (Blender).
     </p>
-    <!-- <article class="postcard dark blue" style="padding: 0px;">
-      <a class="postcard__img_link" href="#" style="overflow: hidden">
-        <img
-          class="postcard__img"
-          src="../assets/goal3.jpg"
-          alt="Image Title"
-        />
-      </a>
-      <div class="postcard__text">
-        <h1 class="postcard__title blue"><a>BACKGROUND</a></h1>
-        <div class="postcard__bar"></div>
-        <p class="postcard__preview-txt" style="padding-top: 10px">
-          STEAM has become a popular concept among the education industry. Many
-          schools have started to implement STEAM education in their curriculum.
-        </p>
-
-        <p class="postcard__preview-txt" style="padding-top: 10px">
-          However, schools had faced difficulties to get new technology into campus.
-          To further promote STEAM education, we have developed 'Printfy'.
-        </p>
-      </div>
-    </article> -->
 
     <div style="margin-bottom: 40px"></div>
 
     <!-- Part for the cards -->
-    <div class="advantage_container " style="padding: 0px">
+    <div class="advantage_container" style="padding: 0px">
       <div class="row align-middle">
         <div
           class="col-md-4 col-lg-4"
@@ -64,11 +42,14 @@
         >
           <div class="card gr">
             <div class="advantages_text">
-              <h2 class="advantages_title">Easy, <br> Convenient </h2>
-              <small class="advantages_content">
+              <h2 class="advantages_title">
+                Easy, <br />
+                Convenient
+              </h2>
+              <normal class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
                 The printer is designed to be simple and easy to use in school
                 environment.
-              </small>
+              </normal>
             </div>
           </div>
         </div>
@@ -79,8 +60,11 @@
         >
           <div class="card gr">
             <div class="advantages_text">
-              <h2 class="advantages_title"><br>Affordable</h2>
-              <small class="advantages_content"> Schools could start their 3D printing lab with only one printer. <br> </small>
+              <h2 class="advantages_title"><br />Affordable</h2>
+              <normal class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
+                Schools could start their 3D printing lab with only one printer.
+                <br />
+              </normal>
             </div>
           </div>
         </div>
@@ -91,11 +75,11 @@
         >
           <div class="card gr">
             <div class="advantages_text">
-              <h2 class="advantages_title"><br>Expandable</h2>
-              <small class="advantages_content">
+              <h2 class="advantages_title"><br />Expandable</h2>
+              <normal class="advantages_content" data-aos="zoom-in"  data-aos-duration="1200">
                 Possible to further upgrade and expand the lab with more and
                 better printers.
-              </small>
+              </normal>
             </div>
           </div>
         </div>
@@ -103,11 +87,12 @@
     </div>
 
     <div style="margin-bottom: 40px"></div>
-    
-    <p class="bg_content fw-light" style="text-align: center">
-     We hope through this project, we could help schools to get access of 3D printing 
-     technologies, help students to explore their possibilities, potentials and 
-     creativity which can help them explore their future career.</p>
+
+    <p class="bg_content fw-light" style="text-align: center" data-aos="zoom-out">
+      We hope through this project, we could help schools to get access of 3D
+      printing technologies, help students to explore their possibilities,
+      potentials and creativity which can help them explore their future career.
+    </p>
   </div>
 </template>
 
@@ -124,6 +109,18 @@ export default {
   name: "BgComp",
   components: {},
 };
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.background = "#501e27";
+  } else {
+    document.getElementById("navbar").style.background = "none";
+  }
+}
 </script>
 
 <style>
@@ -139,7 +136,7 @@ body {
   background: #ededed;
 }
 
-.sub_title {
+.bg_subtitle {
   font-family: "Poppins";
   color: #313aaf;
   min-height: calc(9vh + 20px);
@@ -149,10 +146,15 @@ body {
 }
 
 .bg_content {
-  font-family: "Poppins";
   text-align: left;
   color: #313aaf;
   margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 400;
+  font-style: normal;
+  line-height: calc(1em + 1.5vw);
+  position: relative;
 }
 
 .title2 {
@@ -188,7 +190,6 @@ h2.effect::before {
   overflow: hidden;
   animation: animate 2.5s linear infinite;
 }
-
 
 @keyframes animate {
   0%,
@@ -237,14 +238,78 @@ a:hover {
 
 .advantages_title {
   /*min-height:4rem;*/
-  font-size: 10px+2vw;
+  font-size: calc(12px+2vw);
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.advantages_content{
- 
+/*.navbar {
+  position: fixed;
+  transition: 1s;
 }
+.navbar-brand {
+  color: #fff;
+  font-size: 45px;
+  font-family: Germania;
+  cursor: pointer;
+}
+.icon-bar {
+  background-color: #000;
+}
+.nav {
+  font-family: Lithos Pro;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav li:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #38fd07;
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+.nav li:hover:after {
+  transform: scaleX(1);
+}
+.para {
+  min-height: 500px;
+}
+.para h3 {
+  text-align: center;
+  margin-top: 15%;
+  color: #fff;
+  font-family: nyala;
+  font-size: 44px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #501e27;
+}
+@media (max-width: 720px) {
+  body {
+    background-size: 100% 100%;
+  }
+  .navbar-collapse {
+    background: #501e27;
+  }
+  .para {
+    min-height: 800px;
+  }
+}*/
+
 /*
 .postcard {
   flex-wrap: wrap;
@@ -433,5 +498,4 @@ a:hover {
     );
   }
 } */
-
 </style>
