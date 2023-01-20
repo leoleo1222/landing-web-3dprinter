@@ -9,7 +9,10 @@
     <h2 class="bg_subtitle fw-bolder">Background</h2>
 
     <p
-      class="bg_content" data-aos="zoom-out" data-aos-duration="1000" style="margin-top: 10px"
+      class="bg_content"
+      data-aos="zoom-out"
+      data-aos-duration="1000"
+      style="margin-top: 10px"
     >
       Thanks to the effort contributed by teachers and education workers, STEAM
       has become a popular concept among the education industry. Many schools
@@ -51,14 +54,13 @@
                 Easy, <br />
                 Convenient
               </h2>
-              <h6
+              <h5
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
-                The printer is designed to be simple and easy to use in school
-                environment.
-              </h6>
+                The printer is designed to be easy to use in school environment.
+              </h5>
             </div>
           </div>
         </div>
@@ -70,15 +72,13 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Affordable</h2>
-              <h6
+              <h5
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
-                Schools could start their 3D printing lab with only one
-                printer.
-                <br />
-              </h6>
+                Schools could start their 3D printing lab with only one costy printer.
+              </h5>
             </div>
           </div>
         </div>
@@ -90,14 +90,13 @@
           <div class="card gr">
             <div class="advantages_text">
               <h2 class="advantages_title"><br />Expandable</h2>
-              <h6
+              <h5
                 class="advantages_content"
                 data-aos="zoom-in"
                 data-aos-duration="1200"
               >
-                Possible to further upgrade and expand the lab with more and
-                better printers.
-              </h6>
+                Possible to further upgrade and expand the lab with more printers.
+              </h5>
             </div>
           </div>
         </div>
@@ -133,7 +132,6 @@ export default {
   name: "BgComp",
   components: {},
 };
-
 </script>
 
 <style>
@@ -237,7 +235,7 @@ a:hover {
 }
 
 .card.gr {
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 0.5rem;
   border: none;
   border-radius: 10px;
@@ -259,6 +257,10 @@ a:hover {
   font-weight: 700;
   font-weight: bold;
   line-height: calc(1em + 1.5vw);
+}
+
+.advantages_content{
+  /*height: 8vh;*/
 }
 
 /*.navbar {
