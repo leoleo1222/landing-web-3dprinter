@@ -30,7 +30,7 @@
       </div>
     </div>
   </nav>
-  <div>
+  <div class="container text-start">
     <router-view />
   </div>
 </template>
