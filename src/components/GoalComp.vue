@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <div class="container">
     <div class="row" style="background: #313aaf">
-      <div class="row" style="padding: 7vw 7vw 0vw 3vw">
+      <div class="row" style="padding: 7vw 7vw 0vw 2vw">
         <h3 class="goal">Project Goals</h3>
       </div>
       <div class="col-6 goalpadding">
@@ -10,7 +10,7 @@
           data-aos="flip-up"
           data-aos-duration="2500"
           class="goalcontent"
-          style="font-size: 3vw; font-weight: 700"
+          style="font-size: 3vw; font-weight: 700; padding: 0vw 7vw 0vw 2vw;"
         >
           Guide you <br />
           step-by-step
@@ -34,13 +34,18 @@
         </ul>
         <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Youth</h4>
         <ul>
-          <li class="goalcontent">Provide an entry point for talented youth</li>
+          <li  data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Provide an entry point for talented youth</li>
         </ul>
         <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Society</h4>
         <ul>
-        <li class="goalcontent">Open source and free to use</li>
-        <li class="goalcontent">Inspire the next generation of
+        <li  data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Open source and free to use</li>
+        <li  data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Inspire the next generation of
           innovators and leaders in the Tech industry</li>
+        </ul>
+
+        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">School</h4>
+        <ul>
+        <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Promote the STEAM education by providing workshop materials</li>
         </ul>
 
         <!-- Jenny's part -->
