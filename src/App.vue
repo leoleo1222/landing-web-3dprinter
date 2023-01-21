@@ -1,6 +1,6 @@
 <template>
   <!-- boostrap navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
     <div class="container-fluid">
       <router-link class="navbar-brand" aria-current="page" to="/">HKBU</router-link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </nav>
-  <div>
+  <div class="container text-start">
     <router-view />
   </div>
 </template>
@@ -58,4 +58,5 @@ nav a.router-link-exact-active {
 nav a.router-link-exact-active:hover {
   color: #313aaf;
 }
+
 </style>

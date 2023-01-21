@@ -2,7 +2,7 @@
   <!--This line is for texting -->
   <!-- <div class="row" style="background: red">Hi</div> -->
 
-  <div class="container bg" style="margin: 0px">
+  <div class="container bg">
     <br />
     <!-- <div class="just for margin" style="margin-top:10px"></div> -->
 
@@ -138,7 +138,6 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .container.bg {
-  min-height: 100vh;
   justify-content: flex;
   overflow: hidden;
 }
@@ -235,7 +234,7 @@ a:hover {
 }
 
 .card.gr {
-  padding: 1rem;
+  padding: 1.5rem;
   margin-bottom: 0.5rem;
   border: none;
   border-radius: 10px;
@@ -253,14 +252,20 @@ a:hover {
   /*min-height:4rem;*/
   font-weight: bold;
   margin-bottom: 1rem;
-  font-size: calc(10px + 2vw);
+  font-size: calc(10px + 1.5vw);
   font-weight: 700;
   font-weight: bold;
   line-height: calc(1em + 1.5vw);
 }
 
-.advantages_content{
-  /*height: 8vh;*/
+.advantages_content {
+   font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-style: normal;
+    line-height: calc(0.5em + 1.5vw);
+    color: #ededed;
+    position: relative;
 }
 
 /*.navbar {
