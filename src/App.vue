@@ -30,7 +30,7 @@
       </div>
     </div>
   </nav>
-  <div class="container text-start">
+  <div>
     <router-view />
   </div>
 </template>
@@ -38,13 +38,13 @@
 
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
 }
-
 
 nav a {
   font-weight: bold;

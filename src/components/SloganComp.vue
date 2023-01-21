@@ -1,13 +1,11 @@
 <template>
     <meta charset="utf-8">
-    <div>
+    <div style="background: black; ">
         <img src="../assets/slogan.jpg" class="img-fluid" alt="Responsive image"
             style="opacity: 65% ; height: 100%; width: 100%;">
         <div data-aos="fade-up" class="slogan text-center"> Bringing your ideas to life, <br/> layer by
             layer. </div>
     </div>
-
-
 </template>
 
 <script>
