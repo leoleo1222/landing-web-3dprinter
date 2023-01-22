@@ -1,259 +1,228 @@
 <html lang="en">
-  <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Printify</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Printify</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#background">Background</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#goal">Goals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div style="background: black">
-      <img
-        src="./img/slogan.jpg"
-        class="img-fluid"
-        alt="Responsive image"
-        style="opacity: 65%; height: 100%; width: 100%"
-      />
-      <div data-aos="fade-up" class="slogan text-center">
-        Bringing your ideas to life, <br />
-        layer by layer.
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>Printify</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Printify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#background">Background</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#goal">Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About us</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="container bg" id="background">
-      <br />
-      <!-- <div class="just for margin" style="margin-top:10px"></div> -->
-  
-      <h2 class="bg_subtitle fw-bolder">Background</h2>
-  
-      <p
-        class="bg_content"
-        data-aos="zoom-out"
-        data-aos-duration="1000"
-        style="margin-top: 10px"
-      >
-        Thanks to the effort contributed by teachers and education workers, STEAM
-        has become a popular concept among the education industry. Many schools
-        have started to implement STEAM education in their curriculum which is a
-        great step forward.
-      </p>
-  
-      <p class="bg_content" data-aos="zoom-out" data-aos-duration="2000">
-        We noticed the difficulties of attempting to bring 3D printing technology
-        into campus attributed to concerns such as high set up cost and knowing
-        where to start.
-      </p>
-  
-      <p
-        class="bg_content"
-        data-aos="zoom-out"
-        data-aos-duration="3000"
-        style="margin-bottom: 10px"
-      >
-        To solve this problem, we developed an whole package for 3D printing.
-        Tutorials will also be provided for the schools will guide through the
-        processing from setting up the lab to beginner level tutorials of 3D
-        modelling software (Blender).
-      </p>
-  
-      <div style="margin-bottom: 40px"></div>
-  
-      <!-- Part for the cards -->
-      <div class="advantage_container" style="padding: 0px">
-        <div class="row align-middle">
-          <div
-            class="col-md-4 col-lg-4"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div class="card gr">
-              <div class="advantages_text">
-                <h2 class="advantages_title">
-                  Easy, <br />
-                  Convenient
-                </h2>
-                <h5
-                  class="advantages_content"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  The printer is designed to be easy to use in school environment.
-                </h5>
-              </div>
+  <div style="background: black">
+    <img src="./img/slogan.jpg" class="img-fluid" alt="Responsive image"
+      style="opacity: 65%; height: 100%; width: 100%" />
+    <div data-aos="fade-up" class="slogan text-center">
+      Bringing your ideas to life, <br />
+      layer by layer.
+    </div>
+  </div>
+
+  <div class="container bg" id="background">
+    <br />
+    <!-- <div class="just for margin" style="margin-top:10px"></div> -->
+
+    <h2 class="bg_subtitle fw-bolder">Background</h2>
+
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="1000" style="margin-top: 10px">
+      Thanks to the effort contributed by teachers and education workers, STEAM
+      has become a popular concept among the education industry. Many schools
+      have started to implement STEAM education in their curriculum which is a
+      great step forward.
+    </p>
+
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="2000">
+      We noticed the difficulties of attempting to bring 3D printing technology
+      into campus attributed to concerns such as high set up cost and knowing
+      where to start.
+    </p>
+
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="3000" style="margin-bottom: 10px">
+      To solve this problem, we developed an whole package for 3D printing.
+      Tutorials will also be provided for the schools will guide through the
+      processing from setting up the lab to beginner level tutorials of 3D
+      modelling software (Blender).
+    </p>
+
+    <div style="margin-bottom: 40px"></div>
+
+    <!-- Part for the cards -->
+    <div class="advantage_container" style="padding: 0px">
+      <div class="row align-middle">
+        <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card gr">
+            <div class="advantages_text">
+              <h2 class="advantages_title">
+                Easy, <br />
+                Convenient
+              </h2>
+              <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
+                The printer is designed to be easy to use in school environment.
+              </h5>
             </div>
           </div>
-          <div
-            class="col-md-4 col-lg-4"
-            data-aos="fade-up"
-            data-aos-duration="2250"
-          >
-            <div class="card gr">
-              <div class="advantages_text">
-                <h2 class="advantages_title"><br />Affordable</h2>
-                <h5
-                  class="advantages_content"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  Schools could start their 3D printing lab with only one costy printer.
-                </h5>
-              </div>
+        </div>
+        <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="2250">
+          <div class="card gr">
+            <div class="advantages_text">
+              <h2 class="advantages_title"><br />Affordable</h2>
+              <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
+                Schools could start their 3D printing lab with only one costy printer.
+              </h5>
             </div>
           </div>
-          <div
-            class="col-md-4 col-lg-4"
-            data-aos="fade-up"
-            data-aos-duration="2750"
-          >
-            <div class="card gr">
-              <div class="advantages_text">
-                <h2 class="advantages_title"><br />Expandable</h2>
-                <h5
-                  class="advantages_content"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  Possible to further upgrade and expand the lab with more printers.
-                </h5>
-              </div>
+        </div>
+        <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="2750">
+          <div class="card gr">
+            <div class="advantages_text">
+              <h2 class="advantages_title"><br />Expandable</h2>
+              <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
+                Possible to further upgrade and expand the lab with more printers.
+              </h5>
             </div>
           </div>
         </div>
       </div>
-  
-      <div style="margin-bottom: 40px"></div>
-  
-      <p
-        class="bg_content fw-light"
-        style="text-align: center"
-        data-aos="zoom-out"
-      >
-        We hope through this project, we could help schools to get access of 3D
-        printing technologies, help students to explore their possibilities,
-        potentials and creativity which can help them explore their future career.
-      </p>
-  
-      <!-- <div class="text-center" style="background: #ededed; color: #313aaf">HKBU</div> -->
     </div>
 
-    <div class="container" id="goal">
-      <div class="row" style="background: #313aaf">
-        <div class="row" style="padding: 7vw 7vw 0vw 2vw">
-          <h3 class="goal">Project Goals</h3>
+    <div style="margin-bottom: 40px"></div>
+
+    <p class="bg_content fw-light" style="text-align: center" data-aos="zoom-out">
+      We hope through this project, we could help schools to get access of 3D
+      printing technologies, help students to explore their possibilities,
+      potentials and creativity which can help them explore their future career.
+    </p>
+
+    <!-- <div class="text-center" style="background: #ededed; color: #313aaf">HKBU</div> -->
+  </div>
+
+  <div class="container" id="goal">
+    <div class="row" style="background: #313aaf">
+      <div class="row" style="padding: 7vw 7vw 0vw 2vw">
+        <h3 class="goal">Project Goals</h3>
+      </div>
+      <div class="col-6 goalpadding">
+        <p data-aos="flip-up" data-aos-duration="2500" class="goalcontent"
+          style="font-size: 3vw; font-weight: 700; padding: 0vw 7vw 0vw 2vw;">
+          Guide you <br />
+          step-by-step
+        </p>
+
+        <div class="goalgap" style="background-color: #313aaf"></div>
+        <div class="col">
+          <img src="./img/goal3.jpg" class="img-fluid" alt="Responsive image"
+            style="height: 80%; width: 100%; max-height: 60vw; max-width: 40vw" />
         </div>
-        <div class="col-6 goalpadding">
-          <p data-aos="flip-up" data-aos-duration="2500" class="goalcontent"
-            style="font-size: 3vw; font-weight: 700; padding: 0vw 7vw 0vw 2vw;">
-            Guide you <br />
-            step-by-step
-          </p>
-  
-          <div class="goalgap" style="background-color: #313aaf"></div>
-          <div class="col">
-            <img src="./img/goal3.jpg" class="img-fluid" alt="Responsive image"
-              style="height: 80%; width: 100%; max-height: 60vw; max-width: 40vw" />
-          </div>
-        </div>
-  
-        <div class="col-6 goalpadding">
-          <ul>
-            <li class="goalcontent">All-in-one and easy deployment solution</li>
-            <li class="goalcontent">Lower the barrier for 3D modeling and printing</li>
-          </ul>
-          <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Youth</h4>
-          <ul style="padding: 2vw;">
-            <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Provide an entry point for talented
-              youth</li>
-          </ul>
-          <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Society</h4>
-          <ul style="padding: 2vw;">
-            <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Open source and free to use</li>
-            <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Inspire the next generation of
-              innovators and leaders in the Tech industry</li>
-          </ul>
-  
-          <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">School</h4>
-          <ul style="padding: 2vw;">
-            <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Promote the STEAM education by
-              providing workshop materials</li>
-          </ul>
-        </div>
+      </div>
+
+      <div class="col-6 goalpadding">
+        <ul>
+          <li class="goalcontent">All-in-one and easy deployment solution</li>
+          <li class="goalcontent">Lower the barrier for 3D modeling and printing</li>
+        </ul>
+        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Youth</h4>
+        <ul style="padding: 2vw;">
+          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Provide an entry point for talented
+            youth</li>
+        </ul>
+        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Society</h4>
+        <ul style="padding: 2vw;">
+          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Open source and free to use</li>
+          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Inspire the next generation of
+            innovators and leaders in the Tech industry</li>
+        </ul>
+
+        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">School</h4>
+        <ul style="padding: 2vw;">
+          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Promote the STEAM education by
+            providing workshop materials</li>
+        </ul>
       </div>
     </div>
-    <div class="aboutus_bg" id="aboutus">
-      <div style="padding: 1rem"></div>
-      <h2 data-aos="fade-down" class="aboutus_subtitle p-3">About us</h2>
 
-      <div class="aboutus_container">
-        <img
-          src="./img/about_us.png"
-          class="img-fluid"
-          alt="Responsive image"
-          style="opacity: 65%; height: 100%; width: 100%"
-        />
-      </div>
+  <div class="container" id="flow">
 
-      <h1 class="aboutus_text text-center" style="padding: 5px">
-        We are a group of students from the Department of Computer Science,
-        HKBU. We saw the difficulties for promoting STEAM and 3D Printing in
-        schools. We think it was a pity for the students to miss out on the
-        opportunities to learn about these technologies. Therefore, we come with
-        this project “Printify”.
-      </h1>
+  </div>
 
-      <br />
-      <div class="text-center">
-        <!-- <button type="button" class="btn btn-light" style="color: #313aaf">
+  <div class="aboutus_bg" id="aboutus">
+    <div style="padding: 1rem"></div>
+    <h2 data-aos="fade-down" class="aboutus_subtitle p-3">About us</h2>
+
+    <div class="aboutus_container">
+      <img src="./img/coding.jpg" class="img-fluid" alt="Responsive image"
+        style="opacity: 65%; height: 100%; width: 100%" />
+    </div>
+
+    <h1 class="aboutus_text text-center" style="padding: 5px">
+      We are a group of students from the Department of Computer Science,
+      HKBU. We saw the difficulties for promoting STEAM and 3D Printing in
+      schools. We think it was a pity for the students to miss out on the
+      opportunities to learn about these technologies. Therefore, we come with
+      this project “Printify”.
+    </h1>
+
+    <br />
+    <div class="text-center">
+      <!-- <button type="button" class="btn btn-light" style="color: #313aaf">
             Contact us &#8594;
           </button> -->
-        Contact Us: <br />
-        Email: printifylab@gmail.com
-      </div>
-      <br /><br /><br />
-      <div class="aboutus_bottom text-center p-1">HKBU</div>
+      Contact Us: <br />
+      Email: printifylab@gmail.com
     </div>
-  </body>
+    <br /><br /><br />
+    <div class="aboutus_bottom text-center p-1">HKBU</div>
+  </div>
+</body>
+
 </html>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+
+</script>
 <script>
   AOS.init({
     duration: 2000,
