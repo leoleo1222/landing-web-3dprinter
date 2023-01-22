@@ -1,5 +1,5 @@
 <template>
-  <div class="heading">
+  <div class="operation-heading">
     <h1><b>Operations</b></h1>
   </div>
   <swiper :modules="modules" :slides-per-view="1" :space-between="3000" navigation :loop="true"
@@ -160,7 +160,7 @@ html {
   overflow-x: hidden;
 }
 
-.heading {
+.operation-heading {
   margin-top: 5%;
   color: #313aaf;
   /*text-transform: uppercase;*/
