@@ -1,221 +1,229 @@
 <html lang="en">
-
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link href='open-sans.css' rel='stylesheet' type='text/css'>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Printify</title>
-</head>
-
-<body>
-    <div class="container">
-        <!-- <div class="just for margin" style="margin-top:10px"></div> -->
-        <br>
-        <article class="postcard dark blue" style="padding: 0px;">
-            <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="./img/goal3.jpg" alt="Image Title" />
-            </a>
-            <div class="postcard__text">
-                <h1 class="postcard__title blue"><a>BACKGROUND</a></h1>
-                <div class="postcard__bar"></div>
-                <p class="postcard__preview-txt" style="padding-top: 10px">
-                    STEAM has become a popular concept among the education industry. Many
-                    schools have started to implement STEAM education in their curriculum.
-                </p>
-
-                <p class="postcard__preview-txt" style="padding-top: 10px">
-                    However, schools had faced difficulties to get new technology into campus.
-                    To further promote STEAM education, we have developed 'Printfy'.
-                </p>
-            </div>
-        </article>
-
-        <h2 class="pt-2 text-white">Our 3D printing solution:</h2>
-        <br>
-        <!-- Part for the cards -->
-        <div class="container" style="padding: 0px">
-            <div class="row align-middle">
-                <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1000">
-                    <div class="card gr">
-                        <div class="txt">
-                            <h2 class="advantages_title">EASY TO USE</h2>
-                            <p>The printer is designed to be simple and easy to use in school environment.</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="1750">
-                    <div class="card gr">
-                        <div class="txt">
-                            <h2 class="advantages_title">AFFORDABLE</h2>
-                            <p>Schools could start their 3D printing lab with only one printer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="2500">
-                    <div class="card gr">
-                        <div class="txt">
-                            <h2 class="advantages_title">EXPANDABLE</h2>
-                            <p>Possible to further upgrade and expand the lab with more and better printers.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Printify</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#background">Background</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#goal">Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About us</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    <div style="background: black">
+      <img
+        src="./img/slogan.jpg"
+        class="img-fluid"
+        alt="Responsive image"
+        style="opacity: 65%; height: 100%; width: 100%"
+      />
+      <div class="slogan text-center">
+        Bringing your ideas to life, <br />
+        layer by layer.
+      </div>
     </div>
 
-    <div>
-        <div class="container">
-            <div class="card text-left gap">
-                <div class="card-header gap border-0">
-                    <h3 class="goal">Our goals</h3>
-                    <p> </p>
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <p class="fa fa-star goalcontent"></p>
-                    <b class="goalcontent"> All-in-one and easy deployment solution</b> <br />
-                    <p class="fa fa-star goalcontent"></p>
-                    <b class="goalcontent"> Lower the barrier for 3D modeling and printing</b>
-                </div>
-                <div class="row">
-                    <div data-aos="flip-left" class="cardgoal goal1">
-                        <h4 class="card-title goal1">Youth</h4>
-                        <p class="goalcontent">Provide an entry point for talented youth</p>
-                    </div>
+    <div class="container bg" id="background">
+      <br />
+      <!-- <div class="just for margin" style="margin-top:10px"></div> -->
 
-                    <!-- card-overlay BUG -->
-                    <div data-aos="flip-left" class="cardgoal goal2">
-                        <h4 class="card-title goal2">Society</h4>
-                        <p class="goalcontent">Open source and free to use</p>
-                        <p class="goalcontent">Inspire the next generation of innovators and leaders in the Tech
-                            industry</p>
-                    </div>
+      <h2 class="bg_subtitle fw-bolder">Background</h2>
 
-                    <div data-aos="flip-left" class="photocontainer goal3">
-                        <img src="./img/goal3.jpg" class="img-fluid rounded-start" alt="Responsive image"
-                            style=" height: 100%; width: 100%;">
-                    </div>
+      <p class="bg_content" style="margin-top: 10px">
+        Thanks to the effort contributed by teachers and education workers,
+        STEAM has become a popular concept among the education industry. Many
+        schools have started to implement STEAM education in their curriculum
+        which is a great step forward.
+      </p>
 
-                    <div data-aos="fade-up" class="card-footer border-0">
-                        <p class="text-center slogan">Bringing your ideas to life, layer by layer.</p>
-                    </div>
-                </div>
+      <p class="bg_content">
+        We noticed the difficulties of attempting to bring 3D printing
+        technology into campus attributed to concerns such as high set up cost
+        and knowing where to start.
+      </p>
+
+      <p class="bg_content" style="margin-bottom: 10px">
+        To solve this problem, we developed an whole package for 3D printing.
+        Tutorials will also be provided for the schools will guide through the
+        processing from setting up the lab to beginner level tutorials of 3D
+        modelling software (Blender).
+      </p>
+
+      <div style="margin-bottom: 40px"></div>
+
+      <!-- Part for the cards -->
+      <div class="advantage_container" style="padding: 0px">
+        <div class="row align-middle">
+          <div class="col-md-4 col-lg-4">
+            <div class="card gr">
+              <div class="advantages_text">
+                <h2 class="advantages_title">
+                  Easy, <br />
+                  Convenient
+                </h2>
+                <h5 class="advantages_content">
+                  The printer is designed to be easy to use in school
+                  environment.
+                </h5>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="card gr">
+              <div class="advantages_text">
+                <h2 class="advantages_title"><br />Affordable</h2>
+                <h5 class="advantages_content">
+                  Schools could start their 3D printing lab with only one costy
+                  printer.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="card gr">
+              <div class="advantages_text">
+                <h2 class="advantages_title"><br />Expandable</h2>
+                <h5 class="advantages_content">
+                  Possible to further upgrade and expand the lab with more
+                  printers.
+                </h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div style="margin-bottom: 40px"></div>
+
+      <p class="bg_content fw-light" style="text-align: center">
+        We hope through this project, we could help schools to get access of 3D
+        printing technologies, help students to explore their possibilities,
+        potentials and creativity which can help them explore their future
+        career.
+      </p>
+
+      <!-- <div class="text-center" style="background: #ededed; color: #313aaf">HKBU</div> -->
     </div>
 
-    <div class="heading">
-        <h1><b>Operation</b></h1>
+    <div class="container" id="goal" >
+      <div class="row" style="background: #313aaf">
+        <div class="row" style="padding: 7vw 7vw 0vw 2vw">
+          <h3 class="goal">Project Goals</h3>
+        </div>
+        <div class="col-6 goalpadding">
+          <p
+            class="goalcontent"
+            style="font-size: 3vw; font-weight: 700; padding: 0vw 7vw 0vw 2vw"
+          >
+            Guide you <br />
+            step-by-step
+          </p>
+
+          <div class="goalgap" style="background-color: #313aaf"></div>
+          <div class="col">
+            <img
+              src="./img/goal3.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+              style="
+                height: 80%;
+                width: 100%;
+                max-height: 60vw;
+                max-width: 40vw;
+              "
+            />
+          </div>
+        </div>
+
+        <div class="col-6 goalpadding">
+          <ul>
+            <li class="goalcontent">All-in-one and easy deployment solution</li>
+            <li class="goalcontent">
+              Lower the barrier for 3D modeling and printing
+            </li>
+          </ul>
+          <h4 class="goalsubtitle">Youth</h4>
+          <ul style="padding: 2vw">
+            <li class="goalcontent">
+              Provide an entry point for talented youth
+            </li>
+          </ul>
+          <h4 class="goalsubtitle">Society</h4>
+          <ul style="padding: 2vw">
+            <li class="goalcontent">Open source and free to use</li>
+            <li class="goalcontent">
+              Inspire the next generation of innovators and leaders in the Tech
+              industry
+            </li>
+          </ul>
+
+          <h4 class="goalsubtitle">School</h4>
+          <ul style="padding: 2vw">
+            <li class="goalcontent">
+              Promote the STEAM education by providing workshop materials
+            </li>
+          </ul>
+        </div>
       </div>
-      <div style="margin-top: 2%;">
-        <h2 class="operation-type">HARDWARE</h2>
+    </div>
+    <div class="aboutus_bg" id="aboutus">
+        <div style="padding:1rem"></div>
+        <h2 class="aboutus_subtitle p-3">About us</h2>
+    
+        <div class="aboutus_container">
+            <img
+            src="./img/about_us.png"
+            class="img-fluid"
+            alt="Responsive image"
+            style="opacity: 65%; height: 100%; width: 100%"
+          />
+        </div>
+    
+        <h1 class="aboutus_text text-center" style="padding: 5px">
+          We are a group of students from the Department of Computer Science, HKBU.
+          We saw the difficulties for promoting STEAM and 3D Printing in schools. We
+          think it was a pity for the students to miss out on the opportunities to
+          learn about these technologies. Therefore, we come with this project
+          “Printify”.
+        </h1>
+    
+        <br />
+        <div class="text-center">
+          <!-- <button type="button" class="btn btn-light" style="color: #313aaf">
+            Contact us &#8594;
+          </button> -->
+          Contact Us: <br>
+          Email: printifylab@gmail.com
+        </div>
+        <br /><br /><br />
+        <div class="aboutus_bottom text-center p-1">HKBU</div>
       </div>
-      <swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation :loop="true"
-        :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange"
-        style="margin-top: 3%; user-select: none">
-        <swiper-slide>
-          <img src="./img/Server.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>Server</b></h1>
-              <p>
-                <b>
-                  The server will host the website for receiving the print job submitted by the user. Then it will
-                  schedule
-                  and assign the printing job to the connected printer. It will also receive the states of the printer and
-                  display on the website.
-                </b>
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./img/hardware-pi.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>drives</b></h1>
-              <h3><b>Minimum requirement</b></h3>
-              <b>
-                <ul>
-                  <li>4 core 64 bit CPU</li>
-                  <li>4GB Ram </li>
-                </ul>
-                <p>
-                  Single-board computer like Raspberry Pi will be a suggested device for the Server.
-                </p>
-              </b>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./img/3Dprinter.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>Printer Assemble</b></h1>
-              <p>
-                <b>
-                  The 3D printer series will contain different options of printer with different print volume and
-                  functions.
-                  From 20cm x 20cm x 20cm to 40cm x 40cm x 40cm. The printer could be easily assembled by following the
-                  assembly guide.
-                </b>
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./img/hardware-pc.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>Software Manual</b></h1>
-              <p>
-                <b>
-                  The software manual will be a document that describes how to use the website. The document will be
-                  written
-                  in English and Chinese. The document will be provided to the users through the website.
-                </b>
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./img/front-end.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>Front-end Interface</b></h1>
-              <p>
-                <b>
-                  The front-end interface will be a website that allows users to upload 3D models created via the
-                  Blender
-                  software application and print them. The website will also provide a tutorial for users to learn how
-                  to
-                  use the website and the printer.
-                </b>
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./img/coding.jpg" class="d-block w-100" />
-          <div class="content">
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-              <h1><b>Website</b></h1>
-              <p>
-                <b>
-                  The website will be developed in Flask in Python and also using Vue, which is based on the Octoprint
-                  interface. It will provide function to print and monitor the printer.
-                </b>
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-      </swiper>
-
-      
-
-</body>
-
+  </body>
 </html>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"
+></script>

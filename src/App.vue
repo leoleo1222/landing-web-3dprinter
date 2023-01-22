@@ -1,6 +1,6 @@
 <template>
   <!-- boostrap navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
     <div class="container-fluid">
       <router-link class="navbar-brand" aria-current="page" to="/">HKBU</router-link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,14 +38,13 @@
 
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
 }
-
 
 nav a {
   font-weight: bold;
@@ -53,6 +52,11 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ededed;
 }
+
+nav a.router-link-exact-active:hover {
+  color: #313aaf;
+}
+
 </style>

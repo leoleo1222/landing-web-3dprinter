@@ -1,0 +1,200 @@
+.slogan {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 33vh;
+    left: 22vw;
+    transform: translate(0, -50%);
+    height: auto;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #ededed;
+    text-align: left;    
+}
+
+.container.bg {
+    justify-content: flex;
+    overflow: hidden;
+  }
+  
+  body {
+    background: #ededed;
+  }
+  
+  .bg_subtitle {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: "Poppins";
+    color: #313aaf;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-weight: bold;
+    font-size: 4.5vw;
+  }
+  
+  .bg_content {
+    text-align: left;
+    color: #313aaf;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 500;
+    font-style: normal;
+    line-height: calc(1em + 1.5vw);
+    position: relative;
+  }
+  
+  .title2 {
+    padding: 60% 0% 0% 0%;
+    opacity: 1;
+  }
+  
+  .textbox {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+  }
+  
+  h2.effect {
+    position: relative;
+    font-size: calc(12px + 8vw);
+    color: #161a52;
+    -webkit-text-stroke: 0.3vw #313aaf;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  h2.effect::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #313aaf;
+    -webkit-text-stroke: 0vw #161a52;
+    border-right: 2px solid #313aaf;
+    overflow: hidden;
+    animation: animate 2.5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+  
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+  /* This pen */
+  body {
+    color: #ededed;
+  }
+  
+  .dark {
+    background: #313aaf;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+    transition: color 0.1s;
+  }
+  
+  .card.gr {
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 1);
+    background: hsl(236, 56%, 44%);
+    color: #ededed;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.27);
+  }
+  
+  .card.gr:hover {
+    background: #11187b;
+  }
+  
+  .advantages_title {
+    /*min-height:4rem;*/
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: calc(10px + 1.5vw);
+    font-weight: 700;
+    font-weight: bold;
+    line-height: calc(1em + 1.5vw);
+  }
+  
+  .advantages_content {
+     font-family: "Poppins", sans-serif;
+      font-size: 1.8vw;
+      font-weight: 400;
+      font-style: normal;
+      line-height: calc(0.5em + 1.5vw);
+      color: #ededed;
+      position: relative;
+  }
+
+  
+.container_aboutus {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Top left text */
+  .top-left-aboutus {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .aboutus_bg {
+    background-color: #6996B9;
+    margin: 0px !important;
+  }
+  
+  .aboutus_subtitle {
+    margin-bottom: 2rem;
+    font-family: "Poppins";
+    color: #ededed;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-weight: bold;
+    font-size: 4.5vw;
+  }
+  
+  .aboutus_text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-style: normal;
+    line-height: calc(1em + 2vw);
+    color: #ededed;
+    position: relative;
+  }
+  
+  .aboutus_container {
+    display: block;
+    margin: 15px auto;
+    width: 75%;
+  }
+  
+  .aboutus_bottom {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+    font-style: normal;
+    line-height: calc(1em + 2vw);
+    background: #ededed;
+    color: #313aaf;
+    position: relative;
+  }
