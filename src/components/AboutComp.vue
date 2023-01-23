@@ -1,6 +1,6 @@
 <template>
   <div class="aboutus_bg">
-    <div style="padding:1rem"></div>
+    <div style="padding: 1rem"></div>
     <h2 class="aboutus_subtitle p-3">About us</h2>
 
     <div class="aboutus_container">
@@ -16,7 +16,7 @@
       We saw the difficulties for promoting STEAM and 3D Printing in schools. We
       think it was a pity for the students to miss out on the opportunities to
       learn about these technologies. Therefore, we come with this project
-      “Printify”.
+      - Printify.
     </h1>
 
     <br />
@@ -26,7 +26,7 @@
       </button>
     </div>
     <br /><br /><br />
-    <div class="aboutus_bottom text-center p-1">HKBU</div>
+    <div class="aboutus_bottom text-center">HKBU</div>
   </div>
 </template>
 
@@ -74,6 +74,8 @@ body {
   line-height: calc(1em + 2vw);
   color: #ededed;
   position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .aboutus_container {
