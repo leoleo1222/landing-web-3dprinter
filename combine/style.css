@@ -16,10 +16,8 @@ html {
 
 
 .container-bg {
-  margin-top: 8rem;
-  padding: 0 10rem 0 10rem;
+  margin: 0 5% 0 5%;
   overflow: hidden;
-  margin: 8rem auto 0 auto;
 }
 
 .container-bg-img {
@@ -37,25 +35,23 @@ html {
 }
 
 .bg_subtitle {
-  margin-bottom: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-family: "Poppins";
   color: #313aaf;
   text-align: center;
   font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: 3vw;
 }
 
 .bg_content {
   color: #313aaf;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-}
-
-.title2 {
-  padding: 60% 0% 0% 0%;
-  opacity: 1;
+  font-size: 2vw;
+  margin: 4% 0 0 4%;
+  margin-bottom: 4%;
 }
 
 .textbox {
@@ -64,46 +60,7 @@ html {
   align-items: center;
 }
 
-h2.effect {
-  position: relative;
-  font-size: calc(12px + 8vw);
-  color: #161a52;
-  -webkit-text-stroke: 0.3vw #313aaf;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
 
-h2.effect::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #313aaf;
-  -webkit-text-stroke: 0vw #161a52;
-  border-right: 2px solid #313aaf;
-  overflow: hidden;
-  animation: animate 2.5s linear infinite;
-}
-
-@keyframes animate {
-
-  0%,
-  10%,
-  100% {
-    width: 0;
-  }
-
-  70%,
-  90% {
-    width: 100%;
-  }
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
-
-/* This pen */
 body {
   color: #ededed;
 }
@@ -122,7 +79,7 @@ a:hover {
   padding: 8%;
   margin-bottom: 12%;
   border: none;
-  border-radius: 3rem;
+  border-radius: 2.5rem;
   color: rgba(0, 0, 0, 1);
   background: hsl(236, 56%, 44%);
   color: #ededed;
@@ -263,7 +220,6 @@ a:hover {
 }
 
 /*------swiper------*/
-
 .operation-hardware-container {
   background-color: #ededed;
   width: 40%;
