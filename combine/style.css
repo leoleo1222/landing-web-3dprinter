@@ -15,10 +15,6 @@ html {
   color: #ededed;
 }
 
-.slogan p {
-  text-align: center;
-}
-
 .container-bg {
   padding: 10% 10% 0 10%;
   justify-content: flex;
