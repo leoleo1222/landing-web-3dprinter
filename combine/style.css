@@ -219,6 +219,12 @@ a:hover {
   position: relative;
 }
 
+.goalcontainer {
+  padding: 10% 10% 10% 10%;
+  justify-content: flex;
+  overflow: hidden;
+  background-color: #313aaf;
+}
 
 .goal {
   font-family: "Poppins", sans-serif;
@@ -228,15 +234,8 @@ a:hover {
   color: #ededed;
 }
 
-.goalsubtitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 3vw;
-  font-weight: 700;
-  font-weight: bold;
-  line-height: calc(1em + 1.5vw);
-  ;
-  color: #ededed;
-  position: relative;
+.goalpadding {
+  padding: 7vw; /*top right bottom left, another setting: 3vw 7vw 3vw 0vw*/
 }
 
 .goalcontent {
