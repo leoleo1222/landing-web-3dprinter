@@ -4,9 +4,17 @@ html {
   overflow-x: hidden;
 }
 
+.slogansetting {
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('./img/slogan.jpg');
+  background-size: cover;
+}
+
 .slogan {
   font-family: "Poppins", sans-serif;
-  position:relative;
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
   color: #ededed;
