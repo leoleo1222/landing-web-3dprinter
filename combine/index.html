@@ -26,9 +26,6 @@
             <a class="nav-link" href="#goal">Goals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#flow">Flow</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#aboutus">About us</a>
           </li>
         </ul>
@@ -84,7 +81,7 @@
             </h5>
           </div>
         </div>
-        <div style="width:30%" data-aos="fade-up" data-aos-duration="2250">
+        <div style="width:30%;" data-aos="fade-up" data-aos-duration="2250">
           <div class="card gr">
             <h2 class="advantages_title"><br />Affordable</h2>
             <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
@@ -104,61 +101,57 @@
     </div>
 
     <div style="margin-bottom: 5%"></div>
-
-    <p class="bg_content fw-light" style="text-align: center;margin-bottom: 40%;" data-aos="zoom-out">
-      We hope through this project, we could help schools to get access of 3D
-      printing technologies, help students to explore their possibilities,
-      potentials and creativity which can help them explore their future career.
-    </p>
+    <div class="container-bg-img">
+      <p class="bg_content" style="text-align: center;margin-bottom: 40%;padding: 0 10% 0 10%;" data-aos="zoom-out">
+        We hope through this project, we could help schools to get access of 3D
+        printing technologies, help students to explore their possibilities,
+        potentials and creativity which can help them explore their future career.
+      </p>
+    </div>
     <!-- <div class="text-center" style="background: #ededed; color: #313aaf">HKBU</div> -->
   </div>
 
-  <div class="goalcontainer" id="goal">
-    <div class="row" style="background: #313aaf">
-      <div class="row" style="padding: 7vw 7vw 0vw 7vw"> <!-- another setting: 7vw 7vw 0vw 0vw -->
+  <div class="pj-goal-container" id="goal">
+    <div class="row">
+      <div class="row" style="padding: 7vw 0vw 0vw 10vw">
         <h3 class="goal">Project Goals</h3>
       </div>
       <div class="col-6 goalpadding">
-        <p data-aos="flip-up" data-aos-duration="2500" class="goalcontent" style="font-size: 3vw; font-weight: 700;">
+        <p data-aos="flip-up" data-aos-duration="1000" class="goalcontent"
+          style="font-size: 3vw; font-weight: 700; padding-left:3vw;">
           Guide you <br />
           step-by-step
         </p>
-
-        <div class="goalgap" style="background-color: #313aaf"></div>
-        <div class="col">
-          <img src="./img/goal3.jpg" class="img-fluid" alt="Responsive image"
-            style="height: 80%; width: 100%; max-height: 60vw; max-width: 40vw" />
-        </div>
+        <img src="./img/goal4.jpg" class="img-fluid" alt="Responsive image" style="height: 65%; width: 100%; margin: 6.1vw 0 0 3vw; object-fit: cover;" />
       </div>
 
       <div class="col-6 goalpadding">
-        <ul style="padding: 2vw;">
+        <ul>
           <li class="goalcontent">All-in-one and easy deployment solution</li>
           <li class="goalcontent">Lower the barrier for 3D modeling and printing</li>
         </ul>
-        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Youth</h4>
+        <h4 data-aos="zoom-in-up" data-aos-duration="1000" class="goalsubtitle">Youth</h4>
         <ul style="padding: 2vw;">
-          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Provide an entry point for talented
+          <li data-aos="zoom-in-up" data-aos-duration="1000" class="goalcontent">Provide an entry point for talented
             youth</li>
         </ul>
-        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">Society</h4>
+        <h4 data-aos="zoom-in-up" data-aos-duration="1000" class="goalsubtitle">Society</h4>
         <ul style="padding: 2vw;">
-          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Open source and free to use</li>
-          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Inspire the next generation of
+          <li data-aos="zoom-in-up" data-aos-duration="1000" class="goalcontent">Open source and free to use</li>
+          <li data-aos="zoom-in-up" data-aos-duration="1000" class="goalcontent">Inspire the next generation of
             innovators and leaders in the Tech industry</li>
         </ul>
 
-        <h4 data-aos="zoom-in-up" data-aos-duration="1500" class="goalsubtitle">School</h4>
+        <h4 data-aos="zoom-in-up" data-aos-duration="1000" class="goalsubtitle">School</h4>
         <ul style="padding: 2vw;">
-          <li data-aos="zoom-in-up" data-aos-duration="1500" class="goalcontent">Promote the STEAM education by
+          <li data-aos="zoom-in-up" data-aos-duration="1000" class="goalcontent">Promote the STEAM education by
             providing workshop materials</li>
         </ul>
       </div>
     </div>
-
   </div>
 
-  <div class="operation-heading" id="flow">
+  <div class="operation-heading">
     <h1><b>Operations</b></h1>
   </div>
   <div class="operation-swiper">
@@ -289,7 +282,7 @@
       HKBU. We saw the difficulties for promoting STEAM and 3D Printing in
       schools. We think it was a pity for the students to miss out on the
       opportunities to learn about these technologies. Therefore, we come with
-      this project Printify.
+      this project “Printify”.
     </h1>
 
     <br />
@@ -331,7 +324,7 @@
     duration: 2000,
   });
 
-  // set swiper-pagination-bullets swiper-pagination-horizontal padding bottom 1%
+  // set swiper-pagination-bullets swiper-pagination-horizontal padding bottom -30%
   var swiperPagination = document.getElementsByClassName("swiper-pagination-bullets");
   swiperPagination[0].style.paddingBottom = "-30%";
 

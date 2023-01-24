@@ -15,15 +15,24 @@ html {
   color: #ededed;
 }
 
-.slogan p {
-  text-align: center;
-}
-
 .container-bg {
-  padding: 10% 10% 10% 10%;
+  padding: 10% 10% 0 10%;
   justify-content: flex;
   overflow: hidden;
-  background-color: #ededed;
+}
+
+.container-bg-img {
+  height: 45vw;
+  background: linear-gradient(to top, transparent, #ededed),
+  url("./img/Cover.jpg");
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  background-size: cover;
 }
 
 .bg_subtitle {
@@ -136,12 +145,18 @@ a:hover {
 
 .advantages_content {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 400;
   font-style: normal;
   line-height: calc(0.5em + 1.5vw);
   color: #ededed;
   position: relative;
+}
+
+.pj-goal-container{
+  height: auto;
+  width: 100vw;
+  background: #313aaf;
 }
 
 .container_aboutus {
@@ -229,18 +244,8 @@ a:hover {
   position: relative;
 }
 
-.goalgap {
-  height: 10%;
-}
-
-.goalsubtitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 3vw;
-  font-weight: 700;
-  font-weight: bold;
-  line-height: calc(1em + 1.5vw);
-  color: #ededed;
-  position: relative;
+.goalpadding {
+  padding: 7vw;
 }
 
 .operation-heading {
@@ -374,7 +379,7 @@ a:hover {
   }
 }
 
-.swiper{
+.swiper {
   height: 90vh;
   width: 100%;
   margin-top: 12%;
