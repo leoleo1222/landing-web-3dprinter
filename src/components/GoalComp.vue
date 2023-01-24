@@ -7,7 +7,7 @@
       </div>
       <div class="col-6 goalpadding">
         <p data-aos="flip-up" data-aos-duration="2500" class="goalcontent"
-          style="font-size: 3vw; font-weight: 700; padding: 0vw 7vw 0vw 2vw;">
+          style="font-size: 3vw; font-weight: 700;">
           Guide you <br />
           step-by-step
         </p>
@@ -95,7 +95,7 @@ export default {
 }
 
 .goalgap {
-  height: 18vw;
+  height: 10%;
 }
 
 .goalpadding {
