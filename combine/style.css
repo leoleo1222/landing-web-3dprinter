@@ -231,11 +231,6 @@ a:hover {
   color: #ededed;
 }
 
-.goalpadding {
-  padding: 7vw;
-  /*top right bottom left, another setting: 3vw 7vw 3vw 0vw*/
-}
-
 .goalcontent {
   font-family: "Poppins", sans-serif;
   font-size: 1.8vw;
@@ -244,10 +239,6 @@ a:hover {
   line-height: calc(1em + 1.5vw);
   color: #ededed;
   position: relative;
-}
-
-.goalpadding {
-  padding: 7vw;
 }
 
 .operation-heading {
