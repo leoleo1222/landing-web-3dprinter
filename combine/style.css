@@ -8,30 +8,56 @@ html {
   background: black;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('./img/slogan.jpg');
-  background-size: cover;
+  position: relative;
+}
+
+.slogansetting img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .slogan {
   font-family: "Poppins", sans-serif;
-  position: relative;
-  font-size: 3rem;
+  font-size: calc(2rem + 1vw);
   font-weight: 700;
   color: #ededed;
-  top: 40%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
   transform: translate(0, -50%);
 }
 
-
 .container-bg {
-  margin: 0 5% 0 5%;
   overflow: hidden;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+.bg_subtitle {
+  margin-top: 7%;
+  color: #313aaf;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: calc(2rem + 1vw);
+  margin-top: 10%;
+}
+
+.bg_content {
+  color: #313aaf;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4%;
+  width: 100%;
+  font-size: calc(1.275rem + .3vw);
+  padding: 0 10% 0 10%;
 }
 
 .container-bg-img {
-  height: 45vw;
+  height: 30rem;
   background: linear-gradient(to top, transparent, #ededed),
     url("./img/Cover.jpg");
+    background-size: cover;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -39,35 +65,7 @@ html {
   position: relative;
   right: 50%;
   width: 100vw;
-  background-size: cover;
 }
-
-.bg_subtitle {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-family: "Poppins";
-  color: #313aaf;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  font-weight: bold;
-  font-size: 3.5rem;
-}
-
-.bg_content {
-  color: #313aaf;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  margin: 4% 0 0 4%;
-  margin-bottom: 4%;
-}
-
-.textbox {
-  display: flex;
-  justify-content: flex;
-  align-items: center;
-}
-
 
 body {
   color: #ededed;
@@ -84,7 +82,7 @@ a:hover {
 }
 
 .card.gr {
-  padding: 8%;
+  padding: 10%;
   margin-bottom: 12%;
   border: none;
   border-radius: 30px;
@@ -102,19 +100,18 @@ a:hover {
 .advantages_title {
   /*min-height:4rem;*/
   border-bottom: 0.15rem solid #ededed;
-  margin-bottom: 3vh;
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(1.75rem + .3vw);
   font-weight: 700;
   font-weight: bold;
-  line-height: calc(1em + 1.5vw);
+  line-height: 1.5;
 }
 
 .advantages_content {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
-  line-height: calc(0.5em + 1.5vw);
+  line-height: 1.5;
   color: #ededed;
   position: relative;
 }
@@ -123,8 +120,8 @@ a:hover {
   height: auto;
   width: 100vw;
   background: #313aaf;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto 0 auto;
+  position: relative;
 }
 
 .container_aboutus {
@@ -192,18 +189,18 @@ a:hover {
 
 .goal {
   font-family: "Poppins", sans-serif;
-  position: relative;
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: calc(2rem + 1vw);
   color: #ededed;
+  padding: 8% 0 0 10%;
 }
 
 .goalcontent {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
+  font-size: calc(1.25rem + .3vw);
   font-weight: 400;
   font-style: normal;
-  line-height: calc(1em + 1.5vw);
+  line-height: 1.5;
   color: #ededed;
   position: relative;
 }
