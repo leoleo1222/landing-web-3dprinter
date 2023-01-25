@@ -87,7 +87,7 @@ a:hover {
   padding: 10%;
   margin-bottom: 12%;
   border: none;
-  border-radius: 2.5rem;
+  border-radius: 30px;
   color: rgba(0, 0, 0, 1);
   background: hsl(236, 56%, 44%);
   color: #ededed;
@@ -152,7 +152,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 3.5rem;
 }
 
 .aboutus_text {
