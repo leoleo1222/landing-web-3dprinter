@@ -51,13 +51,13 @@ html {
   font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 3.5rem;
 }
 
 .bg_content {
   color: #313aaf;
   font-family: "Poppins", sans-serif;
-  font-size: 2vw;
+  font-size: 1.5rem;
   margin: 4% 0 0 4%;
   margin-bottom: 4%;
 }
@@ -87,7 +87,7 @@ a:hover {
   padding: 8%;
   margin-bottom: 12%;
   border: none;
-  border-radius: 2.5rem;
+  border-radius: 30px;
   color: rgba(0, 0, 0, 1);
   background: hsl(236, 56%, 44%);
   color: #ededed;
@@ -153,7 +153,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 3.5rem;
 }
 
 .aboutus_text {
