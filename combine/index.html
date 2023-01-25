@@ -37,18 +37,19 @@
   </nav>
   <!--    <img src="./img/slogan.jpg" alt="Responsive image" style="opacity: 65%; height: 100%; width: 100%;" />-->
   <div id="slogan" class="slogansetting">
-    <div data-aos="fade-up" class="slogan text-center">
-      <p>Bringing your ideas to life, <br />
+    <img src="./img/slogan.jpg" alt="Responsive image"/>
+    <div class="slogan text-center">
+      <p data-aos="fade-up">Bringing your ideas to life, <br/>
         layer by layer.
       </p>
     </div>
   </div>
   <!---->
-  <div class="container-bg">
+  <div class="container-bg" id="background">
 
     <h2 class="bg_subtitle">Background</h2>
 
-    <p class="bg_content" data-aos="zoom-out" data-aos-duration="500">
+    <p class="bg_content" data-aos="zoom-out" data-aos-duration="500" style="margin-top: 5%;">
       Thanks to the effort contributed by teachers and education workers, STEAM
       has become a popular concept among the education industry. Many schools
       have started to implement STEAM education in their curriculum which is a
@@ -70,7 +71,7 @@
     <!-- Part for the cards -->
     <div class="advantage_container">
       <div class="row align-middle">
-        <div style="width:30%;margin-left: 5%;" data-aos="fade-up" data-aos-duration="1500">
+        <div style="width:25%;margin-left: 12%;" data-aos="fade-up" data-aos-duration="1500">
           <div class="card gr">
             <h2 class="advantages_title">
               Easy, <br />
@@ -81,7 +82,7 @@
             </h5>
           </div>
         </div>
-        <div style="width:30%;" data-aos="fade-up" data-aos-duration="2250">
+        <div style="width:25%;" data-aos="fade-up" data-aos-duration="2250">
           <div class="card gr">
             <h2 class="advantages_title"><br />Affordable</h2>
             <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
@@ -89,7 +90,7 @@
             </h5>
           </div>
         </div>
-        <div style="width:30%" data-aos="fade-up" data-aos-duration="2750">
+        <div style="width:25%;" data-aos="fade-up" data-aos-duration="2750">
           <div class="card gr">
             <h2 class="advantages_title"><br />Expandable</h2>
             <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
@@ -102,7 +103,7 @@
 
     <div style="margin-bottom: 5%"></div>
     <div class="container-bg-img">
-      <p class="bg_content" style="text-align: center;margin-bottom: 40%; padding: 0 10% 0 10%;" data-aos="zoom-out">
+      <p class="bg_content" style="text-align: center;margin-bottom: 40%;" data-aos="zoom-out">
         We hope through this project, we could help schools to get access of 3D
         printing technologies, help students to explore their possibilities,
         potentials and creativity which can help them explore their future career.
@@ -331,10 +332,15 @@
   swiperPagination[0].style.paddingBottom = "-30%";
 
   var slogan = document.getElementById("slogan")
-  slogan.style.width = screen.width + "px"
-  slogan.style.height = (screen.height-55) + "px"
+  if(navigator.userAgent.indexOf("Mobi") > -1 ){
+    slogan.style.width = 100 + "%";
+    slogan.style.height = 40 + "%";
+  } else {
+    slogan.style.maxWidth = screen.width + "px" 
+    slogan.style.maxHeight = screen.height + "px"
+  }
   var background = document.getElementById("background") 
-  background.style.width = screen.width + "px"
+  background.style.maxWidth = screen.width + "px"
   var goal = document.getElementById("goal") 
   goal.style.width = screen.width + "px"
 
