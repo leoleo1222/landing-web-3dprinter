@@ -139,7 +139,7 @@ a:hover {
 
 .aboutus_bg {
   background-color: #313aaf;
-  margin-top: 12%;
+  margin: 9rem auto 0 auto;
 }
 
 .aboutus_subtitle {
@@ -150,15 +150,15 @@ a:hover {
   font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: calc(3.5rem + .3vw);
 }
 
 .aboutus_text {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8vw;
+  font-size: calc(1.3rem + .3vw);
   font-weight: 400;
   font-style: normal;
-  line-height: calc(1em + 2vw);
+  line-height: calc(1em + 1vw);
   color: #ededed;
   position: relative;
 }
@@ -205,6 +205,12 @@ a:hover {
   position: relative;
 }
 
+.operation-container {
+  height: auto;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
 .operation-heading {
   margin-top: 5%;
   color: #313aaf;
@@ -212,12 +218,12 @@ a:hover {
 }
 
 .operation-heading h1 {
-  font-size: 3.5vw;
+  font-size: calc(2.0rem + 1vw);
 }
 
 .operation-swiper {
   margin-left: 10%;
-  height: 95vh;
+  height: auto;
   width: 80%;
   margin-top: 11%;
   user-select: none;
@@ -228,7 +234,7 @@ a:hover {
 .operation-hardware-container {
   background-color: #ededed;
   width: 40%;
-  height: 80vh;
+  height: 90%;
   margin-left: 10%;
   padding: 0 1.5% 1.5% 1.5%;
   display: inline-block;
@@ -237,7 +243,7 @@ a:hover {
 .operation-hardware-img {
   width: 100%;
   height: 115%;
-  margin-top: -11.8vh;
+  margin-top: -21.5%;
   object-fit: cover;
 }
 
@@ -250,25 +256,25 @@ a:hover {
 }
 
 .operation-hardware-content h1 {
-  font-size: 3vw;
+  font-size: calc(2.3rem + .3vw);
 }
 
 .operation-hardware-content h2 {
-  font-size: 2vw;
+  font-size: calc(1.9rem + .1vw);
 }
 
 .operation-hardware-content h3 {
-  font-size: 1.5vw;
+  font-size: calc(1.2rem + .1vw);
 }
 
 .operation-hardware-content p {
-  font-size: 1.5vw;
+  font-size: calc(1.2rem + .1vw);
 }
 
 .operation-software-container {
   background-color: #ededed;
   width: 40%;
-  height: 80vh;
+  height: 90%;
   margin-left: 50%;
   padding: 0 1.5% 1.5% 1.5%;
   display: inline-block;
@@ -282,14 +288,22 @@ a:hover {
   width: 35%;
 }
 
-.operation-software-content p {
-  font-size: 1.5vw;
+.operation-software-content h1 {
+  font-size: calc(2.3rem + .3vw);
 }
 
-@media only screen and (max-width: 1000px) {
+.operation-software-content h2 {
+  font-size: calc(1.9rem + .1vw);
+}
+
+.operation-software-content p {
+  font-size: calc(1.2rem + .1vw);
+}
+
+@media only screen and (max-width: 1200px) {
   .operation-hardware-img {
     height: 110%;
-    margin-top: -8vh;
+    margin-top: -3.5rem;
   }
 }
 
@@ -336,7 +350,7 @@ a:hover {
 }
 
 .swiper {
-  height: 90vh;
+  height: 40rem;
   width: 100%;
   margin-top: 12%;
   background-color: #313aaf;
@@ -348,4 +362,8 @@ a:hover {
 
 .swiper-button-prev {
   padding-left: 5%;
+}
+
+.swiper-pagination {
+  margin-bottom: 1.5%;
 }
