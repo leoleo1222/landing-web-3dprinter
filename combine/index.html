@@ -40,7 +40,9 @@
     </div>
   </nav>
 
+  <!--    <img src="./img/slogan.jpg" alt="Responsive image" style="opacity: 65%; height: 100%; width: 100%;" />-->
   <div id="slogan" class="slogansetting">
+    <img src="./img/slogan.jpg" alt="Responsive image" />
     <div class="slogan text-center">
       <p data-aos="fade-up">Bringing your ideas to life, <br />
         layer by layer.
@@ -89,7 +91,7 @@
           <div class="card gr">
             <h2 class="advantages_title"><br />Affordable</h2>
             <h5 class="advantages_content" data-aos="zoom-in" data-aos-duration="1200">
-              Schools could start their 3D printing lab with only one costly printer.
+              Schools could start their 3D printing lab with only one costy printer.
             </h5>
           </div>
         </div>
@@ -189,7 +191,7 @@
             </div>
             <div class="operation-hardware-content">
               <h1><b>Hardware</b></h1><br>
-              <h2><b>Drives</b></h2><br>
+              <h2><b>drives</b></h2><br>
               <h3><b>Minimum requirement</b></h3><br>
               <b>
                 <p>
@@ -243,7 +245,7 @@
                 <b>
                   The front-end interface will be a website that allows users to upload 3D models created via Blender
                   software
-                  application and print them. The website will also provide tutorials for users to learn how to use the
+                  application and print them. The website will also provide tutorials or users to learn how to use the
                   website
                   and the printer.
                 </b>
@@ -298,8 +300,8 @@
     <br />
     <div class="text-center">
       <!-- <button type="button" class="btn btn-light" style="color: #313aaf">
-            Contact us &#8594;
-          </button> -->
+          Contact us &#8594;
+        </button> -->
       Contact Us: <br />
       Email: printifylab@gmail.com
     </div>
@@ -338,21 +340,23 @@
   var swiperPagination = document.getElementsByClassName("swiper-pagination-bullets");
   swiperPagination[0].style.paddingBottom = "-30%";
 
-   var slogan = document.getElementById("slogan")
-  // if (navigator.userAgent.indexOf("Mobi") > -1) {
-  //   slogan.style.width = 100 + "%";
-  //   slogan.style.height = 40 + "%";
-  // } else {
-     slogan.style.maxWidth = screen.width + "px"
-     slogan.style.maxHeight = screen.height + "px"
-  // }
+  var slogan = document.getElementById("slogan")
   var background = document.getElementById("background")
-  background.style.maxWidth = screen.width + "px"
   var goal = document.getElementById("goal")
-  goal.style.maxWidth = screen.width + "px"
   var operation = document.getElementById("operation")
-  operation.style.maxWidth = screen.width + "px"
   var aboutus = document.getElementById("aboutus")
-  aboutus.style.maxWidth = screen.width + "px"
+
+  if (navigator.userAgent.indexOf("Mobi") > -1) {
+    slogan.style.maxWidth = (screen.width*2.5) + "px";
+    slogan.style.maxHeight = 40 + "%";
+    // slogan.style.height = 40 + "%";
+  } else {
+    slogan.style.maxWidth = screen.width + "px"
+    slogan.style.maxHeight = screen.height + "px"
+    background.style.maxWidth = screen.width + "px"
+    goal.style.maxWidth = screen.width + "px"
+    operation.style.maxWidth = screen.width + "px"
+    aboutus.style.maxWidth = screen.width + "px"
+  }
 
 </script>

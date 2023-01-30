@@ -5,13 +5,16 @@ html {
 }
 
 .slogansetting {
-  height: 100%;
-  margin-top: -3.5rem;
-  background-image: url("./img/slogan.jpg");
-  background-size: cover;
+  background: black;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.slogansetting img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slogan {
@@ -298,7 +301,7 @@ a:hover {
   font-size: calc(1.2rem + .1vw);
 }
 
-@media only screen and (max-width: 2) {
+@media only screen and (max-width: 1200px) {
   .operation-hardware-img {
     height: 110%;
     margin-top: -3.5rem;
