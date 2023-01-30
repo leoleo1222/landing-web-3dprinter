@@ -4,17 +4,29 @@ html {
   overflow-x: hidden;
 }
 
-.slogansetting {
-  background: black;
+/* .slogansetting {
+  background-image: url("./img/slogan.jpg");
+  background-size: auto;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
+} */
 
-.slogansetting img {
+@media only screen and (max-width: 3600px) {
+  .slogansetting {
+    height: 100%;
+    margin-top: -3.5rem;
+    background-image: url("./img/slogan.jpg");
+    background-size: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+/* .slogansetting img {
   width: 100%;
   object-fit: cover;
-}
+} */
 
 .slogan {
   font-family: "Poppins", sans-serif;
