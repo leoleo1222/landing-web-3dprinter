@@ -1,0 +1,59 @@
+<head>
+  <title>Homework System</title>
+</head>
+
+<body>
+  <div class="container text-center">
+    <!-- Slogan -->
+    <div class="slogan">PLAY HARD, WORK HARD!</div>
+    <!-- Images -->
+    <div class="row mt-5">
+      <div class="col-6">
+        <img
+          src="../assets/nick_cover.png"
+          class="img-fluid"
+          alt="Nick Cover"
+        />
+      </div>
+      <div class="col-6">
+        <img
+          src="../assets/bella_cover.png"
+          class="img-fluid"
+          alt="Bella Cover"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css"; // You can also use <link> for styles
+  AOS.init({
+    duration: 2000,
+  });
+
+  // @ is an alias to /src
+  export default {
+    name: "GoalComp",
+    components: {},
+  };
+</script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+  .slogan {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 20vh;
+    left: 22vw;
+    transform: translate(0, -50%);
+    height: auto;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+    background: linear-gradient(to right, #f12711, #f5af19);
+  }
+</style>
